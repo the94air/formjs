@@ -1,4 +1,4 @@
-# Formjs Framework
+# Form JS Framework
 A Classic Form Styling With Ease using css, javascript and jQuery. Remember it is a simple framework only for your forms. Have fun.
 
 just add the css, js and jQuery files to your code
