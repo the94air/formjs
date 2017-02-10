@@ -21,4 +21,4 @@ just add the css, js and jQuery files to your code
 </html>
 ```
 
-## See full [documentation and components](https://the94air.github.io/formjs/)
+## See full [documentation and components](https://form.js.org)
