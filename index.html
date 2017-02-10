@@ -7,6 +7,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Merienda|Quicksand" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/grid.css">
 	<link rel="stylesheet" type="text/css" href="css/formjs.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/themes/prism.min.css">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<style type="text/css">
 	body, .formjs, .formjs-sm, .formjs-lg {
@@ -14,7 +15,7 @@
 	}
 	.container {
 		margin: 100px auto;
-		max-width: 800px;
+		max-width: 90%;
 	}
 	.header {
 		text-align: center;
@@ -27,9 +28,6 @@
 	.header p {
 		font-size: 20px;
 		margin-bottom: 0px;
-	}
-	.header p.soon {
-		font-size: 15px;
 	}
 	.header p.love {
 		font-size: 15px;
@@ -56,55 +54,115 @@
 		-webkit-animation: animateHeart 2.5s infinite;
 		animation: animateHeart 2.5s infinite;
 	}
+	.language-markup {
+		font-size: 85%;
+	}
 	</style>
 	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 </head>
 <body>
 
 <main class="container">
-<div class="row">
-	<div class="col col-12-of-12">
+
+<section class="row">
+	<div class="header">
+		<h1>Form JS Framework</h1>
+		<p>A Classic Form Styling With Ease</p>
+		<p class="love">Made with <span class="fa fa-heart"></span> by Abdalla Arbab</p>
+	</div>
+</section>
 		
-			<div class="header">
-				<h1>Form JS Framework</h1>
-				<p>A Classic Form Styling With Ease</p>
-				<p class="soon">Full documentation is coming soon</p>
-				<p class="love">Made with <span class="fa fa-heart"></span> by Abdalla Arbab</p>
-			</div>
-		
-			<div>
-				<label class="input-label-sm" for="field1">Small label</label>
-				<input type="text" class="formjs-sm" id="field1" placeholder="Small input">
-			</div>
+<section class="row">
+<div class="col col-5-of-12">
 
-			<div>
-				<label class="input-label" for="field2">Medium label</label>
-				<input type="text" class="formjs" id="field2" placeholder="Medium input">
-			</div>
+	<div>
+		<label class="input-label-sm" for="field1">Small label</label>
+		<input type="text" class="formjs-sm" id="field1" placeholder="Small input">
+	</div>
 
-			<div>
-				<label class="input-label-lg" for="field3">Large label</label>
-				<input type="text" class="formjs-lg" id="field3" placeholder="Large input">
-			</div>
+	<div>
+		<label class="input-label" for="field2">Medium label</label>
+		<input type="text" class="formjs" id="field2" placeholder="Medium input">
+	</div>
 
-			<br><br>
+	<div>
+		<label class="input-label-lg" for="field3">Large label</label>
+		<input type="text" class="formjs-lg" id="field3" placeholder="Large input">
+	</div>
+
+</div>
+
+<div class="col col-7-of-12">
+	<pre><code class="language-markup">&lt;div&gt;
+	&lt;label class="input-label-sm" for="Small"&gt;Small label&lt;/label&gt;
+	&lt;input type="text" class="formjs-sm" id="Small"&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+	&lt;label class="input-label" for="Medium"&gt;Medium label&lt;/label&gt;
+	&lt;input type="text" class="formjs" id="Medium"&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+	&lt;label class="input-label-lg" for="Large"&gt;Large label&lt;/label&gt;
+	&lt;input type="text" class="formjs-lg" id="Large"&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</section>
+
+<section class="row">
+<div class="col col-5-of-12">
 
 			<div>
 				<label class="input-label-sm" for="field4">Small label</label>
 				<textarea class="formjs-sm" id="field4" placeholder="Small textarea"></textarea>
 			</div>
 
+</div>
+<div class="col col-7-of-12">
+	<pre><code class="language-markup">&lt;div&gt;
+	&lt;label class="input-label-sm" for="Small"&gt;Small label&lt;/label&gt;
+	&lt;textarea class="formjs-sm" id="Small"&gt;&lt;/textarea&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</section>
+
+<section class="row">
+<div class="col col-5-of-12">
+
 			<div>
 				<label class="input-label" for="field5">Medium label</label>
 				<textarea class="formjs" id="field5" placeholder="Medium textarea"></textarea>
 			</div>
+
+</div>
+<div class="col col-7-of-12">
+	<pre><code class="language-markup">&lt;div&gt;
+	&lt;label class="input-label" for="Medium"&gt;Medium label&lt;/label&gt;
+	&lt;textarea class="formjs" id="Medium"&gt;&lt;/textarea&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</section>
+
+<section class="row">
+<div class="col col-5-of-12">
 
 			<div>
 				<label class="input-label-lg" for="field6">Large label</label>
 				<textarea class="formjs-lg" id="field6" placeholder="Large textarea"></textarea>
 			</div>
 
-			<br><br>
+</div>
+<div class="col col-7-of-12">
+	<pre><code class="language-markup">&lt;div&gt;
+	&lt;label class="input-label-lg" for="Large"&gt;Large label&lt;/label&gt;
+	&lt;textarea class="formjs-lg" id="Large"&gt;&lt;/textarea&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</section>
+
+<section class="row">
+<div class="col col-5-of-12">
 
 			<div>
 				<input type="text" class="formjs" placeholder="This input is disabled" disabled>
@@ -114,7 +172,29 @@
 				<textarea class="formjs" placeholder="This textarea is disabled" disabled></textarea>
 			</div>
 
-			<br><br>
+</div>
+<div class="col col-7-of-12">
+	<pre><code class="language-markup">&lt;div&gt;
+	&lt;input type="text" class="formjs" disabled&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+	&lt;textarea class="formjs" disabled&gt;&lt;/textarea&gt;
+&lt;/div&gt;
+
+&lt;!-- Or you can just add class disabled --&gt;
+&lt;div&gt;
+	&lt;input type="text" class="formjs disabled"&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+	&lt;textarea class="formjs disabled"&gt;&lt;/textarea&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</section>
+
+<section class="row">
+<div class="col col-5-of-12">
 
 			<div>
 				<label class="input-label" for="field7">This is label</label>
@@ -126,27 +206,68 @@
 				<input type="text" class="formjs formjs-error disableonfocus" id="field8" placeholder="The error will disappear on focus">
 			</div>
 
-			<br><br>
+</div>
+<div class="col col-7-of-12">
+	<pre><code class="language-markup">&lt;div&gt;
+	&lt;label class="input-label" for="error1"&gt;This is label&lt;/label&gt;
+	&lt;input type="text" class="formjs formjs-error" id="error1"&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+	&lt;label class="input-label" for="error2"&gt;This is label&lt;/label&gt;
+	&lt;input type="text" class="formjs formjs-error disableonfocus" id="error2"&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</section>
+
+<section class="row">
+<div class="col col-5-of-12">
 
 			<div>
+				<label class="input-label-sm" for="field9">Small label</label>
 				<input type="text" class="formjs-sm formjs-error" id="field9" placeholder="Small error message">
 				<label class="formjs-msg-sm" for="field9">This field is required</label>
 			</div>
 
 			<div>
+				<label class="input-label" for="field10">Medium label</label>
 				<input type="text" class="formjs formjs-error" id="field10" placeholder="Medium error message">
 				<label class="formjs-msg" for="field10">This field is required</label>
 			</div>
 
 			<div>
+				<label class="input-label-lg" for="field11">Large label</label>
 				<input type="text" class="formjs-lg formjs-error" id="field11" placeholder="Large error message">
 				<label class="formjs-msg-lg" for="field11">This field is required</label>
 			</div>
 
-			<br><br>
+</div>
+<div class="col col-7-of-12">
+	<pre><code class="language-markup">&lt;div&gt;
+	&lt;label class="input-label-sm" for="Small"&gt;Small label&lt;/label&gt;
+	&lt;input type="text" class="formjs-sm formjs-error" id="Small"&gt;
+	&lt;label class="formjs-msg-sm" for="Small"&gt;This field is required&lt;/label&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+	&lt;label class="input-label" for="Medium"&gt;Medium label&lt;/label&gt;
+	&lt;input type="text" class="formjs formjs-error" id="Medium"&gt;
+	&lt;label class="formjs-msg" for="Medium"&gt;This field is required&lt;/label&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+	&lt;label class="input-label-lg" for="Large"&gt;Large label&lt;/label&gt;
+	&lt;input type="text" class="formjs-lg formjs-error" id="Large"&gt;
+	&lt;label class="formjs-msg-lg" for="Large"&gt;This field is required&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</section>
+
+<section class="row">
+<div class="col col-5-of-12">
 
 			<div>
-				<a href="#" class="formjs-link formjs-link-sm">This is a small link</a>
+				<a href="#" class="formjs-link-sm">This is a small link</a>
 			</div>
 
 			<div>
@@ -154,10 +275,27 @@
 			</div>
 
 			<div>
-				<a href="#" class="formjs-link formjs-link-lg">This is a large link</a>
+				<a href="#" class="formjs-link-lg">This is a large link</a>
 			</div>
 
-			<br><br>
+</div>
+<div class="col col-7-of-12">
+	<pre><code class="language-markup">&lt;div&gt;
+	&lt;a href="#" class="formjs-link-sm"&gt;This is a small link&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+	&lt;a href="#" class="formjs-link"&gt;This is a medium link&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+	&lt;a href="#" class="formjs-link-lg"&gt;This is a large link&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</section>
+
+<section class="row">
+<div class="col col-5-of-12">
 
 			<div>
 				<a href="#" class="formjs-link formjs-right">pulled right</a>
@@ -166,158 +304,342 @@
 			<div>
 				<a href="#" class="formjs-link formjs-left">pulled left</a>
 			</div>
+<br><br>
+</div>
+<div class="col col-7-of-12">
+	<pre><code class="language-markup">&lt;div&gt;
+	&lt;a href="#" class="formjs-link formjs-right"&gt;pulled right&lt;/a&gt;
+&lt;/div&gt;
 
-			<br><br><br>
+&lt;div&gt;
+	&lt;a href="#" class="formjs-link formjs-left"&gt;pulled left&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</section>
+
+<section class="row">
+<div class="col col-5-of-12">
 
 			<div class="checkbox-group">
-				<input type="checkbox" class="formjs-checkbox-sm">
+				<input type="checkbox" class="formjs-sm">
 				<span>First checkbox</span>
 
-				<input type="checkbox" class="formjs-checkbox-sm" checked>
+				<input type="checkbox" class="formjs-sm" checked>
 				<span>Second checkbox</span>
 
-				<input type="checkbox" class="formjs-checkbox-sm" disabled>
+				<input type="checkbox" class="formjs-sm" disabled>
 				<span>Disabled checkbox</span>
 
-				<input type="checkbox" class="formjs-checkbox-sm" disabled checked>
+				<input type="checkbox" class="formjs-sm" disabled checked>
 				<span>Disabled & checked checkbox</span>
 			</div>
 
-			<br><br>
+</div>
+<div class="col col-7-of-12">
+	<pre><code class="language-markup">&lt;div class="checkbox-group"&gt;
+	&lt;input type="checkbox" class="formjs-sm"&gt;
+	&lt;span&gt;First checkbox&lt;/span&gt;
+
+	&lt;input type="checkbox" class="formjs-sm" checked&gt;
+	&lt;span&gt;Second checkbox&lt;/span&gt;
+
+	&lt;input type="checkbox" class="formjs-sm" disabled&gt;
+	&lt;span&gt;Disabled checkbox&lt;/span&gt;
+
+	&lt;input type="checkbox" class="formjs-sm" disabled checked&gt;
+	&lt;span&gt;Disabled &amp; checked checkbox&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</section>
+
+<section class="row">
+<div class="col col-5-of-12">
 
 			<div class="checkbox-group">
-				<input type="checkbox" class="formjs-checkbox">
+				<input type="checkbox" class="formjs">
 				<span>First checkbox</span>
 
-				<input type="checkbox" class="formjs-checkbox" checked>
+				<input type="checkbox" class="formjs" checked>
 				<span>Second checkbox</span>
 
-				<input type="checkbox" class="formjs-checkbox" disabled>
+				<input type="checkbox" class="formjs" disabled>
 				<span>Disabled checkbox</span>
 
-				<input type="checkbox" class="formjs-checkbox" disabled checked>
+				<input type="checkbox" class="formjs" disabled checked>
 				<span>Disabled & checked checkbox</span>
 			</div>
 
-			<br><br>
+</div>
+<div class="col col-7-of-12">
+
+	<pre><code class="language-markup">&lt;div class="checkbox-group"&gt;
+	&lt;input type="checkbox" class="formjs"&gt;
+	&lt;span&gt;First checkbox&lt;/span&gt;
+
+	&lt;input type="checkbox" class="formjs" checked&gt;
+	&lt;span&gt;Second checkbox&lt;/span&gt;
+
+	&lt;input type="checkbox" class="formjs" disabled&gt;
+	&lt;span&gt;Disabled checkbox&lt;/span&gt;
+
+	&lt;input type="checkbox" class="formjs" disabled checked&gt;
+	&lt;span&gt;Disabled &amp; checked checkbox&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</section>
+
+<section class="row">
+<div class="col col-5-of-12">
 
 			<div class="checkbox-group">
-				<input type="checkbox" class="formjs-checkbox-lg">
+				<input type="checkbox" class="formjs-lg">
 				<span>First checkbox</span>
 
-				<input type="checkbox" class="formjs-checkbox-lg" checked>
+				<input type="checkbox" class="formjs-lg" checked>
 				<span>Second checkbox</span>
 
-				<input type="checkbox" class="formjs-checkbox-lg" disabled>
+				<input type="checkbox" class="formjs-lg" disabled>
 				<span>Disabled checkbox</span>
 
-				<input type="checkbox" class="formjs-checkbox-lg" disabled checked>
+				<input type="checkbox" class="formjs-lg" disabled checked>
 				<span>Disabled & checked checkbox</span>
 			</div>
 
-			<br><br>
+</div>
+<div class="col col-7-of-12">
+
+	<pre><code class="language-markup">&lt;div class="checkbox-group"&gt;
+	&lt;input type="checkbox" class="formjs-lg"&gt;
+	&lt;span&gt;First checkbox&lt;/span&gt;
+
+	&lt;input type="checkbox" class="formjs-lg" checked&gt;
+	&lt;span&gt;Second checkbox&lt;/span&gt;
+
+	&lt;input type="checkbox" class="formjs-lg" disabled&gt;
+	&lt;span&gt;Disabled checkbox&lt;/span&gt;
+
+	&lt;input type="checkbox" class="formjs-lg" disabled checked&gt;
+	&lt;span&gt;Disabled &amp; checked checkbox&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</section>
+
+<section class="row">
+<div class="col col-5-of-12">
 
 			<div class="radio-group">
-				<input type="radio" name="radio" class="formjs-radio-sm">
+				<input type="radio" name="radio" class="formjs-sm">
 				<span>First radio</span>
 
-				<input type="radio" name="radio" class="formjs-radio-sm" checked>
+				<input type="radio" name="radio" class="formjs-sm" checked>
 				<span>Second radio</span>
 
-				<input type="radio" name="radio1" class="formjs-radio-sm" disabled>
+				<input type="radio" name="radio1" class="formjs-sm" disabled>
 				<span>Disabled radio</span>
 
-				<input type="radio" name="radio2" class="formjs-radio-sm" disabled checked>
+				<input type="radio" name="radio2" class="formjs-sm" disabled checked>
 				<span>Disabled & checked radio</span>
 			</div>
 
-			<br><br>
+</div>
+<div class="col col-7-of-12">
+
+	<pre><code class="language-markup">&lt;div class="radio-group"&gt;
+	&lt;input type="radio" name="radio" class="formjs-sm"&gt;
+	&lt;span&gt;First radio&lt;/span&gt;
+
+	&lt;input type="radio" name="radio" class="formjs-sm" checked&gt;
+	&lt;span&gt;Second radio&lt;/span&gt;
+
+	&lt;input type="radio" name="radio" class="formjs-sm" disabled&gt;
+	&lt;span&gt;Disabled radio&lt;/span&gt;
+
+	&lt;input type="radio" name="radio" class="formjs-sm" disabled checked&gt;
+	&lt;span&gt;Disabled &amp; checked radio&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</section>
+
+<section class="row">
+<div class="col col-5-of-12">
 
 			<div class="radio-group">
-				<input type="radio" name="radio3" class="formjs-radio">
+				<input type="radio" name="radio3" class="formjs">
 				<span>First radio</span>
 
-				<input type="radio" name="radio3" class="formjs-radio" checked>
+				<input type="radio" name="radio3" class="formjs" checked>
 				<span>Second radio</span>
 
-				<input type="radio" name="radio4" class="formjs-radio" disabled>
+				<input type="radio" name="radio4" class="formjs" disabled>
 				<span>Disabled radio</span>
 
-				<input type="radio" name="radio5" class="formjs-radio" disabled checked>
+				<input type="radio" name="radio5" class="formjs" disabled checked>
 				<span>Disabled & checked radio</span>
 			</div>
 
-			<br><br>
+</div>
+<div class="col col-7-of-12">
+
+	<pre><code class="language-markup">&lt;div class="radio-group"&gt;
+	&lt;input type="radio" name="radio1" class="formjs"&gt;
+	&lt;span&gt;First radio&lt;/span&gt;
+
+	&lt;input type="radio" name="radio1" class="formjs" checked&gt;
+	&lt;span&gt;Second radio&lt;/span&gt;
+
+	&lt;input type="radio" name="radio1" class="formjs" disabled&gt;
+	&lt;span&gt;Disabled radio&lt;/span&gt;
+
+	&lt;input type="radio" name="radio1" class="formjs" disabled checked&gt;
+	&lt;span&gt;Disabled &amp; checked radio&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</section>
+
+<section class="row">
+<div class="col col-5-of-12">
 
 			<div class="radio-group">
-				<input type="radio" name="radio6" class="formjs-radio-lg">
+				<input type="radio" name="radio6" class="formjs-lg">
 				<span>First radio</span>
 
-				<input type="radio" name="radio6" class="formjs-radio-lg" checked>
+				<input type="radio" name="radio6" class="formjs-lg" checked>
 				<span>Second radio</span>
 
-				<input type="radio" name="radio7" class="formjs-radio-lg" disabled>
+				<input type="radio" name="radio7" class="formjs-lg" disabled>
 				<span>Disabled radio</span>
 
-				<input type="radio" name="radio8" class="formjs-radio-lg" disabled checked>
+				<input type="radio" name="radio8" class="formjs-lg" disabled checked>
 				<span>Disabled & checked radio</span>
 			</div>
 
-			<br><br>
+</div>
+<div class="col col-7-of-12">
 
-			<div class="radio-group inline-group">
-				<input type="radio" name="radio9" class="formjs-radio" checked>
-				<span>First radio</span>
+	<pre><code class="language-markup">&lt;div class="radio-group"&gt;
+	&lt;input type="radio" name="radio2" class="formjs-lg"&gt;
+	&lt;span&gt;First radio&lt;/span&gt;
 
-				<input type="radio" name="radio9" class="formjs-radio">
-				<span>Second radio</span>
+	&lt;input type="radio" name="radio2" class="formjs-lg" checked&gt;
+	&lt;span&gt;Second radio&lt;/span&gt;
 
-				<input type="radio" name="radio9" class="formjs-radio">
-				<span>Third radio</span>
-			</div>
+	&lt;input type="radio" name="radio2" class="formjs-lg" disabled&gt;
+	&lt;span&gt;Disabled radio&lt;/span&gt;
+
+	&lt;input type="radio" name="radio2" class="formjs-lg" disabled checked&gt;
+	&lt;span&gt;Disabled &amp; checked radio&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</section>
+
+<section class="row">
+<div class="col col-5-of-12">
 
 			<div class="checkbox-group inline-group">
-				<input type="checkbox" class="formjs-checkbox" checked>
+				<input type="checkbox" class="formjs" checked>
 				<span>First checkbox</span>
 
-				<input type="checkbox" class="formjs-checkbox">
+				<input type="checkbox" class="formjs">
 				<span>Second checkbox</span>
 
-				<input type="checkbox" class="formjs-checkbox">
+				<input type="checkbox" class="formjs">
 				<span>Third checkbox</span>
 			</div>
 
-			<br><br>
+			<div class="radio-group inline-group">
+				<input type="radio" name="radio9" class="formjs" checked>
+				<span>First radio</span>
+
+				<input type="radio" name="radio9" class="formjs">
+				<span>Second radio</span>
+
+				<input type="radio" name="radio9" class="formjs">
+				<span>Third radio</span>
+			</div>
+
+</div>
+<div class="col col-7-of-12">
+
+	<pre><code class="language-markup">&lt;div class="checkbox-group inline-group"&gt;
+	&lt;input type="checkbox" class="formjs" checked&gt;
+	&lt;span&gt;First checkbox&lt;/span&gt;
+
+	&lt;input type="checkbox" class="formjs"&gt;
+	&lt;span&gt;Second checkbox&lt;/span&gt;
+
+	&lt;input type="checkbox" class="formjs"&gt;
+	&lt;span&gt;Third checkbox&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class="radio-group inline-group"&gt;
+	&lt;input type="radio" name="radio3" class="formjs" checked&gt;
+	&lt;span&gt;First radio&lt;/span&gt;
+
+	&lt;input type="radio" name="radio3" class="formjs"&gt;
+	&lt;span&gt;Second radio&lt;/span&gt;
+
+	&lt;input type="radio" name="radio3" class="formjs"&gt;
+	&lt;span&gt;Third radio&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</section>
+
+<section class="row">
+<div class="col col-5-of-12">
 
 			<div class="checkbox-group">
-				<input type="checkbox" class="formjs-checkbox" checked>
+				<input type="checkbox" class="formjs" checked>
 				<span class="label-sm">Small label</span>
 
-				<input type="checkbox" class="formjs-checkbox" checked>
+				<input type="checkbox" class="formjs" checked>
 				<span class="label-md">Medium label</span>
 
-				<input type="checkbox" class="formjs-checkbox" checked>
+				<input type="checkbox" class="formjs" checked>
 				<span class="label-lg">large label</span>
 			</div>
 
 			<div class="radio-group">
-				<input type="radio" name="radio10" class="formjs-radio" checked>
+				<input type="radio" name="radio10" class="formjs" checked>
 				<span class="label-sm">Small label</span>
 
-				<input type="radio" name="radio10" class="formjs-radio">
+				<input type="radio" name="radio10" class="formjs">
 				<span class="label-md">Medium label</span>
 
-				<input type="radio" name="radio10" class="formjs-radio">
+				<input type="radio" name="radio10" class="formjs">
 				<span class="label-lg">large label</span>
 			</div>
 
-			<br><br>
+</div>
+<div class="col col-7-of-12">
 
-			<div class="row">
-			<div class="col col-4-of-12">
+	<pre><code class="language-markup">&lt;div class="checkbox-group"&gt;
+	&lt;input type="checkbox" class="formjs" checked&gt;
+	&lt;span class="label-sm"&gt;Small label&lt;/span&gt;
+
+	&lt;input type="checkbox" class="formjs" checked&gt;
+	&lt;span class="label-md"&gt;Medium label&lt;/span&gt;
+
+	&lt;input type="checkbox" class="formjs" checked&gt;
+	&lt;span class="label-lg"&gt;large label&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class="radio-group"&gt;
+	&lt;input type="radio" name="radio10" class="formjs" checked&gt;
+	&lt;span class="label-sm"&gt;Small label&lt;/span&gt;
+
+	&lt;input type="radio" name="radio10" class="formjs"&gt;
+	&lt;span class="label-md"&gt;Medium label&lt;/span&gt;
+
+	&lt;input type="radio" name="radio10" class="formjs"&gt;
+	&lt;span class="label-lg"&gt;large label&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</section>
+
+<section class="row">
+<div class="col col-5-of-12">
 
 			<div class="select-group">
-
 				<select class="formjs-sm">
 					<option>small select</option>
 					<option>First option</option>
@@ -335,25 +657,37 @@
 					<option>First option</option>
 					<option>Second option</option>
 				</select>
-
 			</div>
 
-			<br><br>
+</div>
+<div class="col col-7-of-12">
+
+	<pre><code class="language-markup">&lt;div class="select-group"&gt;
+	&lt;select class="formjs-sm"&gt;
+		&lt;option&gt;small select&lt;/option&gt;
+		&lt;option&gt;First option&lt;/option&gt;
+		&lt;option&gt;Second option&lt;/option&gt;
+	&lt;/select&gt;
+
+	&lt;select class="formjs"&gt;
+		&lt;option&gt;Medium select&lt;/option&gt;
+		&lt;option&gt;First option&lt;/option&gt;
+		&lt;option&gt;Second option&lt;/option&gt;
+	&lt;/select&gt;
+
+	&lt;select class="formjs-lg"&gt;
+		&lt;option&gt;Large select&lt;/option&gt;
+		&lt;option&gt;First option&lt;/option&gt;
+		&lt;option&gt;Second option&lt;/option&gt;
+	&lt;/select&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</section>
+
+<section class="row">
+<div class="col col-5-of-12">
 
 			<div class="select-group">
-
-			<select class="formjs-sm" disabled>
-				<option>Disabled select</option>
-				<option>First option</option>
-				<option>Second option</option>
-			</select>
-
-			</div>
-
-			<br><br>
-
-			<div class="select-group">
-
 				<select class="formjs" multiple>
 					<option>Multiple select</option>
 					<option>Second option</option>
@@ -363,12 +697,35 @@
 					<option>Sixth option</option>
 					<option>Seventh option</option>
 				</select>
-
 			</div>
 
-			<br><br>
+</div>
+<div class="col col-7-of-12">
+
+	<pre><code class="language-markup">&lt;div class="select-group"&gt;
+	&lt;select class="formjs" multiple&gt;
+		&lt;option&gt;Multiple select&lt;/option&gt;
+		&lt;option&gt;Second option&lt;/option&gt;
+		&lt;option&gt;Third option&lt;/option&gt;
+		&lt;option&gt;Fourth option&lt;/option&gt;
+		&lt;option&gt;Fifth option&lt;/option&gt;
+		&lt;option&gt;Sixth option&lt;/option&gt;
+		&lt;option&gt;Seventh option&lt;/option&gt;
+	&lt;/select&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</section>
+
+<section class="row">
+<div class="col col-5-of-12">
 
 			<div class="select-group">
+				<select class="formjs-sm" disabled>
+					<option>Disabled select</option>
+					<option>First option</option>
+					<option>Second option</option>
+				</select>
+
 				<select class="formjs" multiple disabled>
 					<option>Disabled multiple select</option>
 					<option>Second option</option>
@@ -378,32 +735,72 @@
 					<option>Sixth option</option>
 					<option>Seventh option</option>
 				</select>
-
 			</div>
 
-			</div>
-			</div>
+</div>
+<div class="col col-7-of-12">
 
-			<br><br>
+	<pre><code class="language-markup">&lt;div class="select-group"&gt;
+	&lt;select class="formjs-sm" disabled&gt;
+		&lt;option&gt;Disabled select&lt;/option&gt;
+		&lt;option&gt;First option&lt;/option&gt;
+		&lt;option&gt;Second option&lt;/option&gt;
+	&lt;/select&gt;
+
+	&lt;select class="formjs" multiple disabled&gt;
+		&lt;option&gt;Disabled multiple select&lt;/option&gt;
+		&lt;option&gt;Second option&lt;/option&gt;
+		&lt;option&gt;Third option&lt;/option&gt;
+		&lt;option&gt;Fourth option&lt;/option&gt;
+		&lt;option&gt;Fifth option&lt;/option&gt;
+		&lt;option&gt;Sixth option&lt;/option&gt;
+		&lt;option&gt;Seventh option&lt;/option&gt;
+	&lt;/select&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</section>
+
+<section class="row">
+<div class="col col-5-of-12">
 
 			<div>
-			<label class="input-label-sm">Small file input</label>
-			<input type="file" class="formjs-sm" multiple>
+				<label class="input-label-sm">Small file input</label>
+				<input type="file" class="formjs-sm">
 			</div>
 
 			<div>
-			<label class="input-label">Medium file input</label>
-			<input type="file" class="formjs" multiple>
+				<label class="input-label">Medium file input</label>
+				<input type="file" class="formjs">
 			</div>
 
 			<div>
-			<label class="input-label-lg">Large file input</label>
-			<input type="file" class="formjs-lg" multiple>
+				<label class="input-label-lg">Large file input</label>
+				<input type="file" class="formjs-lg">
 			</div>
 
-			<br><br>
+</div>
+<div class="col col-7-of-12">
 
-			<label class="input-label">Button styles</label>
+	<pre><code class="language-markup">&lt;div&gt;
+	&lt;label class="input-label-sm"&gt;Small file input&lt;/label&gt;
+	&lt;input type="file" class="formjs-sm"&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+	&lt;label class="input-label"&gt;Medium file input&lt;/label&gt;
+	&lt;input type="file" class="formjs"&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+	&lt;label class="input-label-lg"&gt;Large file input&lt;/label&gt;
+	&lt;input type="file" class="formjs-lg"&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</section>
+
+<section class="row">
+<div class="col col-5-of-12">
+
 			<input type="submit" class="formjs formjs-default" value="default">
 			<input type="submit" class="formjs formjs-success" value="success">
 			<input type="submit" class="formjs formjs-primary" value="primary">
@@ -411,24 +808,53 @@
 			<input type="submit" class="formjs formjs-warning" value="warning">
 			<input type="submit" class="formjs formjs-danger" value="danger">
 
-			<br><br>
+</div>
+<div class="col col-7-of-12">
 
-			<label class="input-label">Button size</label>
+	<pre><code class="language-markup">&lt;input type="submit" class="formjs formjs-default" value="default"&gt;
+&lt;input type="submit" class="formjs formjs-success" value="success"&gt;
+&lt;input type="submit" class="formjs formjs-primary" value="primary"&gt;
+&lt;input type="submit" class="formjs formjs-info" value="info"&gt;
+&lt;input type="submit" class="formjs formjs-warning" value="warning"&gt;
+&lt;input type="submit" class="formjs formjs-danger" value="danger"&gt;</code></pre>
+</div>
+</section>
+
+<section class="row">
+<div class="col col-5-of-12">
+
 			<input type="submit" class="formjs formjs-danger formjs-sm" value="Small button">
 			<input type="submit" class="formjs formjs-danger" value="Medium button">
 			<input type="submit" class="formjs formjs-danger formjs-lg" value="Large button">
 
-			<br><br>
+</div>
+<div class="col col-7-of-12">
 
-			<label class="input-label">Block view Buttons</label>
+	<pre><code class="language-markup">&lt;input type="submit" class="formjs formjs-danger formjs-sm" value="Small button"&gt;
+&lt;input type="submit" class="formjs formjs-danger" value="Medium button"&gt;
+&lt;input type="submit" class="formjs formjs-danger formjs-lg" value="Large button"&gt;</code></pre>
+</div>
+</section>
+
+<section class="row">
+<div class="col col-5-of-12">
+
 			<input type="submit" class="formjs formjs-success formjs-sm formjs-block" value="Small button">
 			<input type="submit" class="formjs formjs-primary formjs-block" value="Medium button">
 			<input type="submit" class="formjs formjs-warning formjs-lg formjs-block" value="Large button">
 
-	</div>
 </div>
+<div class="col col-7-of-12">
+
+	<pre><code class="language-markup">&lt;input type="submit" class="formjs formjs-success formjs-sm formjs-block" value="Small button"&gt;
+&lt;input type="submit" class="formjs formjs-primary formjs-block" value="Medium button"&gt;
+&lt;input type="submit" class="formjs formjs-warning formjs-lg formjs-block" value="Large button"&gt;</code></pre>
+</div>
+</section>
+
 </main>
 
 <script type="text/javascript" src="js/formjs.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/prism.min.js"></script>
 </body>
 </html>

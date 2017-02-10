@@ -9,32 +9,32 @@ function DisableErrorGlowOnFocus() {
 	});
 }
 function customizeCheckbox() {
-	$('.checkbox-group > input:checkbox.formjs-checkbox-sm').each(function(){
+	$('.checkbox-group > input:checkbox.formjs-sm').each(function(){
 	    $(this).next('span').addBack().wrapAll("<label class='fc-contain-sm checkbox-status'></label>");
 	});
-	$( ".formjs-checkbox-sm" ).after( "<div class='fc-status-sm'></div>" );
-	$('.checkbox-group > input:checkbox.formjs-checkbox').each(function(){
+	$( ".checkbox-status > .formjs-sm" ).after( "<div class='fc-status-sm'></div>" );
+	$('.checkbox-group > input:checkbox.formjs').each(function(){
 	    $(this).next('span').addBack().wrapAll("<label class='fc-contain checkbox-status'></label>");
 	});
-	$( ".formjs-checkbox" ).after( "<div class='fc-status'></div>" );
-	$('.checkbox-group > input:checkbox.formjs-checkbox-lg').each(function(){
+	$( ".checkbox-status > .formjs" ).after( "<div class='fc-status'></div>" );
+	$('.checkbox-group > input:checkbox.formjs-lg').each(function(){
 	    $(this).next('span').addBack().wrapAll("<label class='fc-contain-lg checkbox-status'></label>");
 	});
-	$( ".formjs-checkbox-lg" ).after( "<div class='fc-status-lg'></div>" );
+	$( ".checkbox-status > .formjs-lg" ).after( "<div class='fc-status-lg'></div>" );
 }
 function customizeRadio() {
-	$('.radio-group > input:radio.formjs-radio-sm').each(function(){
+	$('.radio-group > input:radio.formjs-sm').each(function(){
 	    $(this).next('span').addBack().wrapAll("<label class='fr-contain-sm radio-status'></label>");
 	});
-	$( ".formjs-radio-sm" ).after( "<div class='fr-status-sm'></div>" );
-	$('.radio-group > input:radio.formjs-radio').each(function(){
+	$( ".radio-status > .formjs-sm" ).after( "<div class='fr-status-sm'></div>" );
+	$('.radio-group > input:radio.formjs').each(function(){
 	    $(this).next('span').addBack().wrapAll("<label class='fr-contain radio-status'></label>");
 	});
-	$( ".formjs-radio" ).after( "<div class='fr-status'></div>" );
-	$('.radio-group > input:radio.formjs-radio-lg').each(function(){
+	$( ".radio-status > .formjs" ).after( "<div class='fr-status'></div>" );
+	$('.radio-group > input:radio.formjs-lg').each(function(){
 	    $(this).next('span').addBack().wrapAll("<label class='fr-contain-lg radio-status'></label>");
 	});
-	$( ".formjs-radio-lg" ).after( "<div class='fr-status-lg'></div>" );
+	$( ".radio-status > .formjs-lg" ).after( "<div class='fr-status-lg'></div>" );
 }
 function addArrowToSelect() {
 	$( "select:not([multiple]).formjs-sm" ).after( "<div class='select-arrow-sm'></div>" );
@@ -51,22 +51,22 @@ function addArrowToSelect() {
 	});
 }
 function disableDisabledInputs() {
-	$('.checkbox-group input:disabled.formjs-checkbox-sm').each(function() {
+	$('.checkbox-group input:disabled.formjs-sm').each(function() {
 	    $(this).parent().addClass("disabled");
 	});
-	$('.checkbox-group input:disabled.formjs-checkbox').each(function() {
+	$('.checkbox-group input:disabled.formjs').each(function() {
 	    $(this).parent().addClass("disabled");
 	});
-	$('.checkbox-group input:disabled.formjs-checkbox-lg').each(function() {
+	$('.checkbox-group input:disabled.formjs-lg').each(function() {
 	    $(this).parent().addClass("disabled");
 	});
-	$('.radio-group input:disabled.formjs-radio-sm').each(function() {
+	$('.radio-group input:disabled.formjs-sm').each(function() {
 	    $(this).parent().addClass("disabled");
 	});
-	$('.radio-group input:disabled.formjs-radio').each(function() {
+	$('.radio-group input:disabled.formjs').each(function() {
 	    $(this).parent().addClass("disabled");
 	});
-	$('.radio-group input:disabled.formjs-radio-lg').each(function() {
+	$('.radio-group input:disabled.formjs-lg').each(function() {
 	    $(this).parent().addClass("disabled");
 	});
 	$("input:not([type=submit]):not([type=button]):not([type=radio]):not([type=checkbox]):not([type=file]).disabled").attr("disabled", true);

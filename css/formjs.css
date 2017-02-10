@@ -209,6 +209,20 @@ textarea.formjs-lg {
 .formjs-msg-lg {
 	font-size: 19px;
 }
+a.formjs-link-sm {
+	background-color: transparent;
+	border-color: transparent;
+	color: #3777b0;
+	text-decoration: none;
+	margin: 5px 0;
+	line-height: 1.42857143;
+	font-weight: normal;
+	border-radius: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	transition: background-color 150ms linear, color 150ms linear, border 150ms linear;
+	font-size: 13px;
+}
 a.formjs-link {
 	background-color: transparent;
 	border-color: transparent;
@@ -221,22 +235,32 @@ a.formjs-link {
 	-webkit-box-shadow: none;
 	box-shadow: none;
 	transition: background-color 150ms linear, color 150ms linear, border 150ms linear;
-}
-a.formjs-link:hover, a.formjs-link:focus {
-    color: #255076;
-    text-decoration: underline;
-}
-a.formjs-link.disabled {
-    pointer-events: none
-}
-a.formjs-link-sm {
-	font-size: 13px;
-}
-a.formjs-link-md {
 	font-size: 16px;
 }
 a.formjs-link-lg {
+	background-color: transparent;
+	border-color: transparent;
+	color: #3777b0;
+	text-decoration: none;
+	margin: 5px 0;
+	line-height: 1.42857143;
+	font-weight: normal;
+	border-radius: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	transition: background-color 150ms linear, color 150ms linear, border 150ms linear;
 	font-size: 19px;
+}
+a.formjs-link-sm:hover, a.formjs-link-sm:focus,
+a.formjs-link:hover, a.formjs-link:focus,
+a.formjs-link-lg:hover, a.formjs-link-lg:focus {
+    color: #255076;
+    text-decoration: underline;
+}
+a.formjs-link-sm.disabled,
+a.formjs-link.disabled,
+a.formjs-link-lg.disabled {
+    pointer-events: none
 }
 .formjs-left {
 	float: left !important;
@@ -1004,6 +1028,7 @@ input[type="submit"].formjs, button.formjs, a.formjs {
     outline: 0;
     line-height: 1.42857143;
     border-radius: 3px;
+    margin: 2px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -1315,5 +1340,6 @@ input[type="submit"].formjs-lg, button.formjs-lg, a.formjs-lg {
 input[type="submit"].formjs-block, button.formjs-block, a.formjs-block {
 	display: block;
 	width: 100%;
+	margin: 0;
 	margin-top: 5px;
 }
