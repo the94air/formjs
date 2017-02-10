@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form JS</title>
+	<link href="https://fonts.googleapis.com/css?family=Merienda|Quicksand" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/grid.css">
+	<link rel="stylesheet" type="text/css" href="css/formjs.css">
+	<style type="text/css">
+	body, .formjs, .formjs-sm, .formjs-lg {
+		font-family: "Quicksand", serif;
+	}
+	.container {
+		margin: 100px auto;
+		max-width: 800px;
+	}
+	.header {
+		text-align: center;
+	}
+	.header h1 {
+		font-family: "Merienda", serif;
+		font-size: 50px;
+		color: #d31a48;
+	}
+	.header p {
+		font-size: 20px;
+		margin-bottom: 0px;
+	}
+	.header p.soon {
+		font-size: 15px;
+		margin-bottom: 30px;
+	}
+
+	</style>
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+
+<main class="container">
+<div class="row">
+	<div class="col col-12-of-12">
+
+		<div class="header">
+			<h1>Form JS Framework</h1>
+			<p>A Classic Form Styling With Ease</p>
+			<p class="soon">Full documentation is coming soon</p>
+		</div>
+
+		<form method="post">
+
+			<div>
+				<label class="input-label-sm" for="field1">Small label</label>
+				<input type="text" class="formjs-sm" id="field1" placeholder="Small input">
+			</div>
+
+			<div>
+				<label class="input-label" for="field2">Medium label</label>
+				<input type="text" class="formjs" id="field2" placeholder="Medium input">
+			</div>
+
+			<div>
+				<label class="input-label-lg" for="field3">Large label</label>
+				<input type="text" class="formjs-lg" id="field3" placeholder="Large input">
+			</div>
+
+			<br><br>
+
+			<div>
+				<label class="input-label-sm" for="field4">Small label</label>
+				<textarea class="formjs-sm" id="field4" placeholder="Small textarea"></textarea>
+			</div>
+
+			<div>
+				<label class="input-label" for="field5">Medium label</label>
+				<textarea class="formjs" id="field5" placeholder="Medium textarea"></textarea>
+			</div>
+
+			<div>
+				<label class="input-label-lg" for="field6">Large label</label>
+				<textarea class="formjs-lg" id="field6" placeholder="Large textarea"></textarea>
+			</div>
+
+			<br><br>
+
+			<div>
+				<input type="text" class="formjs" placeholder="This input is disabled" disabled>
+			</div>
+
+			<div>
+				<textarea class="formjs" placeholder="This textarea is disabled" disabled></textarea>
+			</div>
+
+			<br><br>
+
+			<div>
+				<label class="input-label" for="field7">This is label</label>
+				<input type="text" class="formjs formjs-error" id="field7" placeholder="This field have some error">
+			</div>
+
+			<div>
+				<label class="input-label" for="field8">This is label</label>
+				<input type="text" class="formjs formjs-error disableonfocus" id="field8" placeholder="The error will disappear on focus">
+			</div>
+
+			<br><br>
+
+			<div>
+				<input type="text" class="formjs-sm formjs-error" id="field9" placeholder="Small error message">
+				<label class="formjs-msg-sm" for="field9">This field is required</label>
+			</div>
+
+			<div>
+				<input type="text" class="formjs formjs-error" id="field10" placeholder="Medium error message">
+				<label class="formjs-msg" for="field10">This field is required</label>
+			</div>
+
+			<div>
+				<input type="text" class="formjs-lg formjs-error" id="field11" placeholder="Large error message">
+				<label class="formjs-msg-lg" for="field11">This field is required</label>
+			</div>
+
+			<br><br>
+
+			<div>
+				<a href="#" class="formjs-link formjs-link-sm">This is a small link</a>
+			</div>
+
+			<div>
+				<a href="#" class="formjs-link">This is a medium link</a>
+			</div>
+
+			<div>
+				<a href="#" class="formjs-link formjs-link-lg">This is a large link</a>
+			</div>
+
+			<br><br>
+
+			<div>
+				<a href="#" class="formjs-link formjs-right">pulled right</a>
+			</div>
+
+			<div>
+				<a href="#" class="formjs-link formjs-left">pulled left</a>
+			</div>
+
+			<br><br><br>
+
+			<div class="checkbox-group">
+				<input type="checkbox" class="formjs-checkbox-sm">
+				<span>First checkbox</span>
+
+				<input type="checkbox" class="formjs-checkbox-sm" checked>
+				<span>Second checkbox</span>
+
+				<input type="checkbox" class="formjs-checkbox-sm" disabled>
+				<span>Disabled checkbox</span>
+
+				<input type="checkbox" class="formjs-checkbox-sm" disabled checked>
+				<span>Disabled & checked checkbox</span>
+			</div>
+
+			<br><br>
+
+			<div class="checkbox-group">
+				<input type="checkbox" class="formjs-checkbox">
+				<span>First checkbox</span>
+
+				<input type="checkbox" class="formjs-checkbox" checked>
+				<span>Second checkbox</span>
+
+				<input type="checkbox" class="formjs-checkbox" disabled>
+				<span>Disabled checkbox</span>
+
+				<input type="checkbox" class="formjs-checkbox" disabled checked>
+				<span>Disabled & checked checkbox</span>
+			</div>
+
+			<br><br>
+
+			<div class="checkbox-group">
+				<input type="checkbox" class="formjs-checkbox-lg">
+				<span>First checkbox</span>
+
+				<input type="checkbox" class="formjs-checkbox-lg" checked>
+				<span>Second checkbox</span>
+
+				<input type="checkbox" class="formjs-checkbox-lg" disabled>
+				<span>Disabled checkbox</span>
+
+				<input type="checkbox" class="formjs-checkbox-lg" disabled checked>
+				<span>Disabled & checked checkbox</span>
+			</div>
+
+			<br><br>
+
+			<div class="radio-group">
+				<input type="radio" name="radio" class="formjs-radio-sm">
+				<span>First radio</span>
+
+				<input type="radio" name="radio" class="formjs-radio-sm" checked>
+				<span>Second radio</span>
+
+				<input type="radio" name="radio1" class="formjs-radio-sm" disabled>
+				<span>Disabled radio</span>
+
+				<input type="radio" name="radio2" class="formjs-radio-sm" disabled checked>
+				<span>Disabled & checked radio</span>
+			</div>
+
+			<br><br>
+
+			<div class="radio-group">
+				<input type="radio" name="radio3" class="formjs-radio">
+				<span>First radio</span>
+
+				<input type="radio" name="radio3" class="formjs-radio" checked>
+				<span>Second radio</span>
+
+				<input type="radio" name="radio4" class="formjs-radio" disabled>
+				<span>Disabled radio</span>
+
+				<input type="radio" name="radio5" class="formjs-radio" disabled checked>
+				<span>Disabled & checked radio</span>
+			</div>
+
+			<br><br>
+
+			<div class="radio-group">
+				<input type="radio" name="radio6" class="formjs-radio-lg">
+				<span>First radio</span>
+
+				<input type="radio" name="radio6" class="formjs-radio-lg" checked>
+				<span>Second radio</span>
+
+				<input type="radio" name="radio7" class="formjs-radio-lg" disabled>
+				<span>Disabled radio</span>
+
+				<input type="radio" name="radio8" class="formjs-radio-lg" disabled checked>
+				<span>Disabled & checked radio</span>
+			</div>
+
+			<br><br>
+
+			<div class="radio-group inline-group">
+				<input type="radio" name="radio9" class="formjs-radio" checked>
+				<span>First radio</span>
+
+				<input type="radio" name="radio9" class="formjs-radio">
+				<span>Second radio</span>
+
+				<input type="radio" name="radio9" class="formjs-radio">
+				<span>Third radio</span>
+			</div>
+
+			<div class="checkbox-group inline-group">
+				<input type="checkbox" class="formjs-checkbox" checked>
+				<span>First checkbox</span>
+
+				<input type="checkbox" class="formjs-checkbox">
+				<span>Second checkbox</span>
+
+				<input type="checkbox" class="formjs-checkbox">
+				<span>Third checkbox</span>
+			</div>
+
+			<br><br>
+
+			<div class="checkbox-group">
+				<input type="checkbox" class="formjs-checkbox" checked>
+				<span class="label-sm">Small label</span>
+
+				<input type="checkbox" class="formjs-checkbox" checked>
+				<span class="label-md">Medium label</span>
+
+				<input type="checkbox" class="formjs-checkbox" checked>
+				<span class="label-lg">large label</span>
+			</div>
+
+			<div class="radio-group">
+				<input type="radio" name="radio10" class="formjs-radio" checked>
+				<span class="label-sm">Small label</span>
+
+				<input type="radio" name="radio10" class="formjs-radio">
+				<span class="label-md">Medium label</span>
+
+				<input type="radio" name="radio10" class="formjs-radio">
+				<span class="label-lg">large label</span>
+			</div>
+
+			<br><br>
+
+			<div class="row">
+			<div class="col col-4-of-12">
+
+			<div class="select-group">
+
+				<select class="formjs-sm">
+					<option>small select</option>
+					<option>First option</option>
+					<option>Second option</option>
+				</select>
+
+				<select class="formjs">
+					<option>Medium select</option>
+					<option>First option</option>
+					<option>Second option</option>
+				</select>
+
+				<select class="formjs-lg">
+					<option>Large select</option>
+					<option>First option</option>
+					<option>Second option</option>
+				</select>
+
+			</div>
+
+			<br><br>
+
+			<div class="select-group">
+
+			<select class="formjs-sm" disabled>
+				<option>Disabled select</option>
+				<option>First option</option>
+				<option>Second option</option>
+			</select>
+
+			</div>
+
+			<br><br>
+
+			<div class="select-group">
+
+				<select class="formjs" multiple>
+					<option>Multiple select</option>
+					<option>Second option</option>
+					<option>Third option</option>
+					<option>Fourth option</option>
+					<option>Fifth option</option>
+					<option>Sixth option</option>
+					<option>Seventh option</option>
+				</select>
+
+			</div>
+
+			<br><br>
+
+			<div class="select-group">
+				<select class="formjs" multiple disabled>
+					<option>Disabled multiple select</option>
+					<option>Second option</option>
+					<option>Third option</option>
+					<option>Fourth option</option>
+					<option>Fifth option</option>
+					<option>Sixth option</option>
+					<option>Seventh option</option>
+				</select>
+
+			</div>
+
+			</div>
+			</div>
+
+			<br><br>
+
+			<div>
+			<label class="input-label-sm">Small file input</label>
+			<input type="file" class="formjs-sm" multiple>
+			</div>
+
+			<div>
+			<label class="input-label">Medium file input</label>
+			<input type="file" class="formjs" multiple>
+			</div>
+
+			<div>
+			<label class="input-label-lg">Large file input</label>
+			<input type="file" class="formjs-lg" multiple>
+			</div>
+
+			<br><br>
+
+			<label class="input-label">Button styles</label>
+			<input type="submit" class="formjs formjs-default" value="default">
+			<input type="submit" class="formjs formjs-success" value="success">
+			<input type="submit" class="formjs formjs-primary" value="primary">
+			<input type="submit" class="formjs formjs-info" value="info">
+			<input type="submit" class="formjs formjs-warning" value="warning">
+			<input type="submit" class="formjs formjs-danger" value="danger">
+
+			<br><br>
+
+			<label class="input-label">Button size</label>
+			<input type="submit" class="formjs formjs-danger formjs-sm" value="Small button">
+			<input type="submit" class="formjs formjs-danger" value="Medium button">
+			<input type="submit" class="formjs formjs-danger formjs-lg" value="Large button">
+
+			<br><br>
+
+			<label class="input-label">Block view Buttons</label>
+			<input type="submit" class="formjs formjs-success formjs-sm formjs-block" value="Small button">
+			<input type="submit" class="formjs formjs-primary formjs-block" value="Medium button">
+			<input type="submit" class="formjs formjs-warning formjs-lg formjs-block" value="Large button">
+		</form>
+
+	</div>
+</div>
+</main>
+
+<script type="text/javascript" src="js/formjs.js"></script>
+</body>
+</html>
