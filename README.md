@@ -21,4 +21,4 @@ just add the css, js and jQuery files to your code
 </html>
 ```
 
-## See full documentation and components in [form.github.io](form.github.io)
+## See full documentation and components in [form.github.io](http://form.github.io)
