@@ -1,5 +1,5 @@
-# form.github.io
-A Classic Form Styling With Ease
+# formjs Framework
+A Classic Form Styling With Ease using css, javascript and jQuery. Remember it is a simple framework only for your forms. Have fun.
 
 just add the css, js and jQuery files to your code
 
@@ -21,4 +21,4 @@ just add the css, js and jQuery files to your code
 </html>
 ```
 
-# See full documentation in [form.github.io](form.github.io)
+## See full documentation and components in [form.github.io](form.github.io)
