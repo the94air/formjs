@@ -11,14 +11,6 @@
 	body, .formjs, .formjs-sm, .formjs-lg {
 		font-family: "Quicksand", serif;
 	}
-	::-moz-selection {
-	background: #b3d4fc;
-	text-shadow: none;
-	}
-	::selection {
-	background: #b3d4fc;
-	text-shadow: none;
-	}
 	.container {
 		margin: 100px auto;
 		max-width: 800px;
@@ -37,9 +29,32 @@
 	}
 	.header p.soon {
 		font-size: 15px;
-		margin-bottom: 30px;
 	}
-
+	.header p.love {
+		font-size: 15px;
+		margin-bottom: 40px;
+	}
+	@-webkit-keyframes animateHeart {
+		0%  { -webkit-transform: scale(1); }
+		5%  { -webkit-transform: scale(1.2); }
+		10% { -webkit-transform: scale(1.1); }
+		15% { -webkit-transform: scale(1.3); }
+		50% { -webkit-transform: scale(1); }
+		100% { -webkit-transform: scale(1); }
+	}
+	@keyframes animateHeart {
+		0%  { transform: scale(1); }
+		5%  { transform: scale(1.2); }
+		10% { transform: scale(1.1); }
+		15% { transform: scale(1.3); }
+		50% { transform: scale(1); }
+		100% { transform: scale(1); }
+	}
+	.fa-heart {
+		color: #cc0a3a;
+		-webkit-animation: animateHeart 2.5s infinite;
+		animation: animateHeart 2.5s infinite;
+	}
 	</style>
 	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 </head>
@@ -48,12 +63,13 @@
 <main class="container">
 <div class="row">
 	<div class="col col-12-of-12">
-
-		<div class="header">
-			<h1>Form JS Framework</h1>
-			<p>A Classic Form Styling With Ease</p>
-			<p class="soon">Full documentation is coming soon</p>
-		</div>
+		
+			<div class="header">
+				<h1>Form JS Framework</h1>
+				<p>A Classic Form Styling With Ease</p>
+				<p class="soon">Full documentation is coming soon</p>
+				<p class="love">Made with <span class="fa fa-heart"></span> by Abdalla Arbab</p>
+			</div>
 		
 			<div>
 				<label class="input-label-sm" for="field1">Small label</label>
