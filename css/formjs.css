@@ -1033,7 +1033,8 @@ input[type="submit"].formjs, button.formjs, a.formjs {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-	transition: background-color 150ms linear, border-color 150ms linear, color 150ms linear, box-shadow 150ms linear;
+    transition: background-color 150ms linear, border-color 150ms linear, color 150ms linear, box-shadow 150ms linear;
+    text-decoration: none;
 }
 input[type="submit"].formjs:focus, button.formjs:focus, a.formjs:focus,
 input[type="submit"].formjs.focus, button.formjs.focus, a.formjs.focus,
