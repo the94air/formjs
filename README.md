@@ -28,16 +28,16 @@ just add the css, js and jQuery files to your code
 ```
 ## Easy to use formjs class
 
-Just add `formjs` class to your input or spacify you input size
-
-`fromjs-sm` for small size
-`formjs`    for medium size (normal-size)
-`formjs-lg` for large size
-
-Except the button input
-
-`fromjs fromjs-sm` for small size
-`fromjs formjs`    for medium size (normal-size)
-`fromjs formjs-lg` for large size
-
+Just add `formjs` class to your input or spacify you input size  
+  
+`fromjs-sm` for small size  
+`formjs`    for medium size (normal-size)  
+`formjs-lg` for large size  
+  
+Except the button input  
+  
+`fromjs fromjs-sm` for small size  
+`fromjs formjs`    for medium size (normal-size)  
+`fromjs formjs-lg` for large size  
+  
 ## See full [documentation and components](https://form.js.org)
