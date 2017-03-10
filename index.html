@@ -1,3 +1,14 @@
+<!--
+    ______    _______    ________    ___    ___           _________    ________  
+   |   ___|  |  ___  |  |  ____  |  |   \  /   |         |____    _|  |  ______| 
+   |  |___   | |   | |  | |   / /   |    \/    |              |  |    |  |_____  
+   |   ___|  | |   | |  | | <  /    |  |\  /|  |         __   |  |    |_____   | 
+   |  |      | |___| |  | |  \ \    |  | \/ |  |        |  |__|  |     _____|  |
+   |__|      |_______|  | |   \ \   |__|    |__|        |________|    |________| 
+
+To Do stuff
+1. Inline forms.
+-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,71 +16,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="A Classic Form Styling With Ease using javascript, css and jQuery. Remember it is a simple framework only for your forms. Have fun.">
 	<title>Form JS Framework</title>
-	<link href="https://fonts.googleapis.com/css?family=Merienda|Quicksand" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/grid.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.27/webfontloader.js"></script>
+	<script>
+		WebFont.load({
+			google: {
+				families: ['Merienda', 'Quicksand']
+			}
+		});
+	</script>
+	<link rel="stylesheet" type="text/css" href="css/assets/grid.css">
 	<link rel="stylesheet" type="text/css" href="css/formjs.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/themes/prism.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<style type="text/css">
-	body, .formjs, .formjs-sm, .formjs-lg {
-		font-family: "Quicksand", serif;
-	}
-	::-moz-selection {
-		background: #b3d4fc;
-		text-shadow: none;
-	}
-	::selection {
-		background: #b3d4fc;
-		text-shadow: none;
-	}
-	.container {
-		margin: 100px auto;
-		max-width: 90%;
-	}
-	.header {
-		text-align: center;
-	}
-	.header h1 {
-		font-family: "Merienda", serif;
-		font-size: 50px;
-		color: #d31a48;
-	}
-	.header p {
-		font-size: 20px;
-		margin-bottom: 0px;
-	}
-	.header p.love {
-		font-size: 15px;
-	}
-	@-webkit-keyframes animateHeart {
-		0%  { -webkit-transform: scale(1); }
-		5%  { -webkit-transform: scale(1.2); }
-		10% { -webkit-transform: scale(1.1); }
-		15% { -webkit-transform: scale(1.3); }
-		50% { -webkit-transform: scale(1); }
-		100% { -webkit-transform: scale(1); }
-	}
-	@keyframes animateHeart {
-		0%  { transform: scale(1); }
-		5%  { transform: scale(1.2); }
-		10% { transform: scale(1.1); }
-		15% { transform: scale(1.3); }
-		50% { transform: scale(1); }
-		100% { transform: scale(1); }
-	}
-	.fa-heart {
-		color: #cc0a3a;
-		-webkit-animation: animateHeart 2.5s infinite;
-		animation: animateHeart 2.5s infinite;
-	}
-	#download {
-		margin: 20px 0 70px 0;
-	}
-	.language-markup {
-		font-size: 85%;
-	}
-	</style>
-	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/assets/style.css">
 </head>
 <body>
 
@@ -85,12 +44,61 @@
 		<p class="love">Made with <span class="fa fa-heart"></span> by Abdalla Arbab</p><br>
 		<a class="github-button" href="https://github.com/the94air/formjs" data-icon="octicon-star" data-style="mega" aria-label="Star the94air/formjs on GitHub">Star</a>
 		<a href="https://twitter.com/intent/tweet?screen_name=abdalla__arbab" class="twitter-mention-button" data-show-count="false">Tweet to @abdalla__arbab</a><br>
-		<a href="https://github.com/the94air/formjs/archive/master.zip" class="formjs formjs-danger formjs-lg" id="download">Download</a>
+		<p class="love">v 1.1.0</p>
+		<a href="https://github.com/the94air/formjs/archive/v1.1.0.zip" class="formjs formjs-danger formjs-lg" id="download">Download <i class="fa fa-download" aria-hidden="true"></i></a>
 	</div>
 </section>
-		
+	
 <section class="row">
-<div class="col col-5-of-12">
+	<div class="col col-5-of-12 v-center">
+		<h2>Installation</h2>
+		<p>To use formjs just use it from the CDN or download <a href="https://github.com/the94air/formjs/releases">the lastest release</a> from github and also add <a href="https://code.jquery.com/">jquery</a> to your code</p>
+	</div><!--
+	--><div class="col col-7-of-12 v-center">
+	<pre class="code-wrapper"><code class="language-css" id="cdn">https://cdn.rawgit.com/the94air/formjs/aa4abe2b/css/formjs.css
+// Or minfied version
+https://cdn.rawgit.com/the94air/formjs/aa4abe2b/css/formjs.min.css
+// FormJs JS 
+https://cdn.rawgit.com/the94air/formjs/aa4abe2b/js/formjs.js
+// Or minfied version
+https://cdn.rawgit.com/the94air/formjs/aa4abe2b/js/formjs.min.js</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#cdn"></button>
+</pre>
+</section>
+
+<div class="col-12-of-12">
+	<hr>
+</div>
+
+<section class="row">
+	<div class="col col-5-of-12 v-center">
+		<h2>No-js</h2>
+		<p>You can use this framework with or without jquery. But some components does require jquery. If you didn't use jquery you don't need formjs.js file and you shouldn't use these classes: </p>
+		<ul>
+			<li><code>.disable</code> class</li>
+			<li><code>.disableonfocus</code> class</li>
+			<li><code>.formjs</code> Checkboxes</li>
+			<li><code>.formjs</code> Radios</li>
+			<li><code>.formjs</code> select [not multiple select]</li>
+		</ul>
+		<p>using these components without <code>.formjs</code> class will not effect your forms.</p> 
+		<p>we alse use javascript to disable submit buttons while the page is loading to save forms from resubmition while the form is submited.</p>
+	</div><!--
+	--><div class="col col-7-of-12 v-center">
+	<pre class="code-wrapper"><code class="language-css" id="css">/* Remember to add your font */
+	.formjs, .formjs-sm, .formjs-lg {
+	font-family: "Quicksand", serif;
+}</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#css"></button>
+</pre>
+</section>
+
+<div class="col-12-of-12">
+	<hr>
+</div>
+
+<section class="row">
+<div class="col col-5-of-12 v-center">
+
+	<h2>Text inputs</h2>
 
 	<div>
 		<label class="input-label-sm" for="field1">Small label</label>
@@ -107,79 +115,104 @@
 		<input type="text" class="formjs-lg" id="field3" placeholder="Large input">
 	</div>
 
-</div>
-
-<div class="col col-7-of-12">
-	<pre><code class="language-markup">&lt;div&gt;
+</div><!--
+    
+--><div class="col col-7-of-12 v-center">
+	<pre class="code-wrapper"><code class="language-markup" id="text-input-sm">&lt;div&gt;
 	&lt;label class="input-label-sm" for="Small"&gt;Small label&lt;/label&gt;
 	&lt;input type="text" class="formjs-sm" id="Small"&gt;
-&lt;/div&gt;
+&lt;/div&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#text-input-sm"></button>
+</pre>
 
-&lt;div&gt;
+<pre class="code-wrapper"><code class="language-markup" id="text-input">&lt;div&gt;
 	&lt;label class="input-label" for="Medium"&gt;Medium label&lt;/label&gt;
 	&lt;input type="text" class="formjs" id="Medium"&gt;
-&lt;/div&gt;
+&lt;/div&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#text-input"></button>
+</pre>
 
-&lt;div&gt;
+<pre class="code-wrapper"><code class="language-markup" id="text-input-lg">&lt;div&gt;
 	&lt;label class="input-label-lg" for="Large"&gt;Large label&lt;/label&gt;
 	&lt;input type="text" class="formjs-lg" id="Large"&gt;
-&lt;/div&gt;</code></pre>
+&lt;/div&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#text-input-lg"></button>
+</pre>
 </div>
 </section>
 
+<div class="col-12-of-12">
+	<hr>
+</div>
+
+<div class="row">
+	<div class="col-12-of-12 section-title-outter">
+		<h2>Textarea inputs</h2>
+	</div>
+</div>
+
 <section class="row">
-<div class="col col-5-of-12">
+<div class="col col-5-of-12 v-center">
 
 			<div>
 				<label class="input-label-sm" for="field4">Small label</label>
 				<textarea class="formjs-sm" id="field4" placeholder="Small textarea"></textarea>
 			</div>
 
-</div>
-<div class="col col-7-of-12">
-	<pre><code class="language-markup">&lt;div&gt;
+</div><!--
+    
+--><div class="col col-7-of-12 v-center">
+	<pre class="code-wrapper"><code class="language-markup" id="textarea-inputs-sm">&lt;div&gt;
 	&lt;label class="input-label-sm" for="Small"&gt;Small label&lt;/label&gt;
 	&lt;textarea class="formjs-sm" id="Small"&gt;&lt;/textarea&gt;
-&lt;/div&gt;</code></pre>
+&lt;/div&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#textarea-inputs-sm"></button>
+</pre>
 </div>
 </section>
 
 <section class="row">
-<div class="col col-5-of-12">
+<div class="col col-5-of-12 v-center">
 
 			<div>
 				<label class="input-label" for="field5">Medium label</label>
 				<textarea class="formjs" id="field5" placeholder="Medium textarea"></textarea>
 			</div>
 
-</div>
-<div class="col col-7-of-12">
-	<pre><code class="language-markup">&lt;div&gt;
+</div><!--
+    
+--><div class="col col-7-of-12 v-center">
+	<pre class="code-wrapper"><code class="language-markup" id="textarea-inputs">&lt;div&gt;
 	&lt;label class="input-label" for="Medium"&gt;Medium label&lt;/label&gt;
 	&lt;textarea class="formjs" id="Medium"&gt;&lt;/textarea&gt;
-&lt;/div&gt;</code></pre>
+&lt;/div&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#textarea-inputs"></button>
+</pre>
 </div>
 </section>
 
 <section class="row">
-<div class="col col-5-of-12">
+<div class="col col-5-of-12 v-center">
 
 			<div>
 				<label class="input-label-lg" for="field6">Large label</label>
 				<textarea class="formjs-lg" id="field6" placeholder="Large textarea"></textarea>
 			</div>
 
-</div>
-<div class="col col-7-of-12">
-	<pre><code class="language-markup">&lt;div&gt;
+</div><!--
+    
+--><div class="col col-7-of-12 v-center">
+	<pre class="code-wrapper"><code class="language-markup" id="textarea-inputs-lg">&lt;div&gt;
 	&lt;label class="input-label-lg" for="Large"&gt;Large label&lt;/label&gt;
 	&lt;textarea class="formjs-lg" id="Large"&gt;&lt;/textarea&gt;
-&lt;/div&gt;</code></pre>
+&lt;/div&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#textarea-inputs-lg"></button>
+</pre>
 </div>
 </section>
 
+<div class="col-12-of-12">
+	<hr>
+</div>
+
 <section class="row">
-<div class="col col-5-of-12">
+<div class="col col-5-of-12 v-center">
+
+	<h2>Disabled text input & textarea</h2>
 
 			<div>
 				<input type="text" class="formjs" placeholder="This input is disabled" disabled>
@@ -189,9 +222,10 @@
 				<textarea class="formjs" placeholder="This textarea is disabled" disabled></textarea>
 			</div>
 
-</div>
-<div class="col col-7-of-12">
-	<pre><code class="language-markup">&lt;div&gt;
+</div><!--
+    
+--><div class="col col-7-of-12 v-center">
+	<pre class="code-wrapper"><code class="language-markup" id="disabled-inputs">&lt;div&gt;
 	&lt;input type="text" class="formjs" disabled&gt;
 &lt;/div&gt;
 
@@ -199,20 +233,26 @@
 	&lt;textarea class="formjs" disabled&gt;&lt;/textarea&gt;
 &lt;/div&gt;
 
-&lt;!-- Or you can just add class disabled --&gt;
+&lt;!-- Or you can just add class disabled [Require jQuery] --&gt;
 &lt;div&gt;
 	&lt;input type="text" class="formjs disabled"&gt;
 &lt;/div&gt;
 
 &lt;div&gt;
 	&lt;textarea class="formjs disabled"&gt;&lt;/textarea&gt;
-&lt;/div&gt;</code></pre>
+&lt;/div&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#disabled-inputs"></button>
+</pre>
 </div>
 </section>
 
-<section class="row">
-<div class="col col-5-of-12">
+<div class="col-12-of-12">
+	<hr>
+</div>
 
+<section class="row">
+<div class="col col-5-of-12 v-center">
+
+	<h2>Validation errors</h2>
 			<div>
 				<label class="input-label" for="field7">This is label</label>
 				<input type="text" class="formjs formjs-error" id="field7" placeholder="This field have some error">
@@ -223,9 +263,10 @@
 				<input type="text" class="formjs formjs-error disableonfocus" id="field8" placeholder="The error will disappear on focus">
 			</div>
 
-</div>
-<div class="col col-7-of-12">
-	<pre><code class="language-markup">&lt;div&gt;
+</div><!--
+    
+--><div class="col col-7-of-12 v-center">
+	<pre class="code-wrapper"><code class="language-markup" id="validation-errors">&lt;div&gt;
 	&lt;label class="input-label" for="error1"&gt;This is label&lt;/label&gt;
 	&lt;input type="text" class="formjs formjs-error" id="error1"&gt;
 &lt;/div&gt;
@@ -233,13 +274,20 @@
 &lt;div&gt;
 	&lt;label class="input-label" for="error2"&gt;This is label&lt;/label&gt;
 	&lt;input type="text" class="formjs formjs-error disableonfocus" id="error2"&gt;
-&lt;/div&gt;</code></pre>
+&lt;/div&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#validation-errors"></button>
+</pre>
 </div>
 </section>
 
-<section class="row">
-<div class="col col-5-of-12">
+<div class="col-12-of-12">
+	<hr>
+</div>
 
+<section class="row">
+<div class="col col-5-of-12 v-center">
+
+		<h2>Error messages</h2>
+	
 			<div>
 				<label class="input-label-sm" for="field9">Small label</label>
 				<input type="text" class="formjs-sm formjs-error" id="field9" placeholder="Small error message">
@@ -258,30 +306,40 @@
 				<label class="formjs-msg-lg" for="field11">This field is required</label>
 			</div>
 
-</div>
-<div class="col col-7-of-12">
-	<pre><code class="language-markup">&lt;div&gt;
+</div><!--
+
+--><div class="col col-7-of-12 v-center">
+	<pre class="code-wrapper"><code class="language-markup" id="input-error-sm">&lt;div&gt;
 	&lt;label class="input-label-sm" for="Small"&gt;Small label&lt;/label&gt;
 	&lt;input type="text" class="formjs-sm formjs-error" id="Small"&gt;
 	&lt;label class="formjs-msg-sm" for="Small"&gt;This field is required&lt;/label&gt;
-&lt;/div&gt;
+&lt;/div&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#input-error-sm"></button>
+</pre>
 
-&lt;div&gt;
+	<pre class="code-wrapper"><code class="language-markup" id="input-error">&lt;div&gt;
 	&lt;label class="input-label" for="Medium"&gt;Medium label&lt;/label&gt;
 	&lt;input type="text" class="formjs formjs-error" id="Medium"&gt;
 	&lt;label class="formjs-msg" for="Medium"&gt;This field is required&lt;/label&gt;
-&lt;/div&gt;
+&lt;/div&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="input-error"></button>
+</pre>
 
-&lt;div&gt;
+	<pre class="code-wrapper"><code class="language-markup" id="input-error-lg">&lt;div&gt;
 	&lt;label class="input-label-lg" for="Large"&gt;Large label&lt;/label&gt;
 	&lt;input type="text" class="formjs-lg formjs-error" id="Large"&gt;
 	&lt;label class="formjs-msg-lg" for="Large"&gt;This field is required&lt;/label&gt;
-&lt;/div&gt;</code></pre>
+&lt;/div&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#input-error-lg"></button>
+</pre>
 </div>
 </section>
 
+<div class="col-12-of-12">
+	<hr>
+</div>
+
 <section class="row">
-<div class="col col-5-of-12">
+<div class="col col-5-of-12 v-center">
+
+		<h2>Links</h2>
 
 			<div>
 				<a href="#" class="formjs-link-sm">This is a small link</a>
@@ -295,24 +353,35 @@
 				<a href="#" class="formjs-link-lg">This is a large link</a>
 			</div>
 
-</div>
-<div class="col col-7-of-12">
-	<pre><code class="language-markup">&lt;div&gt;
+</div><!--
+
+--><div class="col col-7-of-12 v-center">
+	<pre class="code-wrapper"><code class="language-markup" id="link-sm">&lt;div&gt;
 	&lt;a href="#" class="formjs-link-sm"&gt;This is a small link&lt;/a&gt;
-&lt;/div&gt;
+&lt;/div&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#link-sm"></button>
+</pre>
 
-&lt;div&gt;
+<pre class="code-wrapper"><code class="language-markup" id="link">&lt;div&gt;
 	&lt;a href="#" class="formjs-link"&gt;This is a medium link&lt;/a&gt;
-&lt;/div&gt;
+&lt;/div&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#link"></button>
+</pre>
 
-&lt;div&gt;
+<pre class="code-wrapper"><code class="language-markup" id="link-lg">&lt;div&gt;
 	&lt;a href="#" class="formjs-link-lg"&gt;This is a large link&lt;/a&gt;
-&lt;/div&gt;</code></pre>
+&lt;/div&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#link-lg"></button>
+</pre>
 </div>
 </section>
 
+<div class="col-12-of-12">
+	<hr>
+</div>
+
 <section class="row">
-<div class="col col-5-of-12">
+<div class="col col-5-of-12 v-center">
+
+		<h2>Element float<span class="red">*</span></h2>
+		<p class="fyi">This will work in any element not just links<span class="red">*</span></p>
 
 			<div>
 				<a href="#" class="formjs-link formjs-right">pulled right</a>
@@ -322,21 +391,29 @@
 				<a href="#" class="formjs-link formjs-left">pulled left</a>
 			</div>
 <br><br>
-</div>
-<div class="col col-7-of-12">
-	<pre><code class="language-markup">&lt;div&gt;
+</div><!--
+
+--><div class="col col-7-of-12 v-center">
+	<pre class="code-wrapper"><code class="language-markup" id="float">&lt;div&gt;
 	&lt;a href="#" class="formjs-link formjs-right"&gt;pulled right&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;div&gt;
 	&lt;a href="#" class="formjs-link formjs-left"&gt;pulled left&lt;/a&gt;
-&lt;/div&gt;</code></pre>
+&lt;/div&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#float"></button>
+</pre>
 </div>
 </section>
 
-<section class="row">
-<div class="col col-5-of-12">
+<div class="col-12-of-12">
+	<hr>
+</div>
 
+<section class="row">
+<div class="col col-5-of-12 v-center">
+
+		<h2>Small checkboxes <sup class="red sup-text" title="Require jQuery">jquery</sup></h2>
+		
 			<div class="checkbox-group">
 				<input type="checkbox" class="formjs-sm">
 				<span>First checkbox</span>
@@ -352,8 +429,8 @@
 			</div>
 
 </div>
-<div class="col col-7-of-12">
-	<pre><code class="language-markup">&lt;div class="checkbox-group"&gt;
+<div class="col col-7-of-12 v-center">
+	<pre class="code-wrapper"><code class="language-markup" id="checkbox-sm">&lt;div class="checkbox-group"&gt;
 	&lt;input type="checkbox" class="formjs-sm"&gt;
 	&lt;span&gt;First checkbox&lt;/span&gt;
 
@@ -365,12 +442,19 @@
 
 	&lt;input type="checkbox" class="formjs-sm" disabled checked&gt;
 	&lt;span&gt;Disabled &amp; checked checkbox&lt;/span&gt;
-&lt;/div&gt;</code></pre>
+&lt;/div&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#checkbox-sm"></button>
+</pre>
 </div>
 </section>
 
+<div class="col-12-of-12">
+	<hr>
+</div>
+
 <section class="row">
-<div class="col col-5-of-12">
+<div class="col col-5-of-12  v-center">
+
+		<h2>Normal checkboxes <sup class="red sup-text" title="Require jQuery">jquery</sup></h2>
 
 			<div class="checkbox-group">
 				<input type="checkbox" class="formjs">
@@ -386,10 +470,11 @@
 				<span>Disabled & checked checkbox</span>
 			</div>
 
-</div>
-<div class="col col-7-of-12">
+</div><!--
 
-	<pre><code class="language-markup">&lt;div class="checkbox-group"&gt;
+--><div class="col col-7-of-12  v-center">
+
+	<pre class="code-wrapper"><code class="language-markup" id="checkbox">&lt;div class="checkbox-group"&gt;
 	&lt;input type="checkbox" class="formjs"&gt;
 	&lt;span&gt;First checkbox&lt;/span&gt;
 
@@ -401,12 +486,19 @@
 
 	&lt;input type="checkbox" class="formjs" disabled checked&gt;
 	&lt;span&gt;Disabled &amp; checked checkbox&lt;/span&gt;
-&lt;/div&gt;</code></pre>
+&lt;/div&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#checkbox"></button>
+</pre>
 </div>
 </section>
 
+<div class="col-12-of-12">
+	<hr>
+</div>
+
 <section class="row">
-<div class="col col-5-of-12">
+<div class="col col-5-of-12 v-center">
+
+		<h2>Large checkboxes <sup class="red sup-text" title="Require jQuery">jquery</sup></h2>
 
 			<div class="checkbox-group">
 				<input type="checkbox" class="formjs-lg">
@@ -422,10 +514,11 @@
 				<span>Disabled & checked checkbox</span>
 			</div>
 
-</div>
-<div class="col col-7-of-12">
+</div><!--
 
-	<pre><code class="language-markup">&lt;div class="checkbox-group"&gt;
+--><div class="col col-7-of-12 v-center">
+
+	<pre class="code-wrapper"><code class="language-markup" id="checkbox-lg">&lt;div class="checkbox-group"&gt;
 	&lt;input type="checkbox" class="formjs-lg"&gt;
 	&lt;span&gt;First checkbox&lt;/span&gt;
 
@@ -437,12 +530,19 @@
 
 	&lt;input type="checkbox" class="formjs-lg" disabled checked&gt;
 	&lt;span&gt;Disabled &amp; checked checkbox&lt;/span&gt;
-&lt;/div&gt;</code></pre>
+&lt;/div&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#checkbox-lg"></button>
+</pre>
 </div>
 </section>
 
+<div class="col-12-of-12">
+	<hr>
+</div>
+
 <section class="row">
-<div class="col col-5-of-12">
+<div class="col col-5-of-12 v-center">
+
+		<h2>Small radios <sup class="red sup-text" title="Require jQuery">jquery</sup></h2>
 
 			<div class="radio-group">
 				<input type="radio" name="radio" class="formjs-sm">
@@ -458,10 +558,11 @@
 				<span>Disabled & checked radio</span>
 			</div>
 
-</div>
-<div class="col col-7-of-12">
+</div><!--
 
-	<pre><code class="language-markup">&lt;div class="radio-group"&gt;
+--><div class="col col-7-of-12 v-center">
+
+	<pre class="code-wrapper"><code class="language-markup" id="radios-sm">&lt;div class="radio-group"&gt;
 	&lt;input type="radio" name="radio" class="formjs-sm"&gt;
 	&lt;span&gt;First radio&lt;/span&gt;
 
@@ -473,12 +574,19 @@
 
 	&lt;input type="radio" name="radio" class="formjs-sm" disabled checked&gt;
 	&lt;span&gt;Disabled &amp; checked radio&lt;/span&gt;
-&lt;/div&gt;</code></pre>
+&lt;/div&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#radios-sm"></button>
+</pre>
 </div>
 </section>
 
+<div class="col-12-of-12">
+	<hr>
+</div>
+
 <section class="row">
-<div class="col col-5-of-12">
+<div class="col col-5-of-12 v-center">
+
+		<h2>Normal radios <sup class="red sup-text" title="Require jQuery">jquery</sup></h2>
 
 			<div class="radio-group">
 				<input type="radio" name="radio3" class="formjs">
@@ -494,10 +602,11 @@
 				<span>Disabled & checked radio</span>
 			</div>
 
-</div>
-<div class="col col-7-of-12">
+</div><!--
 
-	<pre><code class="language-markup">&lt;div class="radio-group"&gt;
+--><div class="col col-7-of-12 v-center">
+
+	<pre class="code-wrapper"><code class="language-markup" id="radios">&lt;div class="radio-group"&gt;
 	&lt;input type="radio" name="radio1" class="formjs"&gt;
 	&lt;span&gt;First radio&lt;/span&gt;
 
@@ -509,12 +618,19 @@
 
 	&lt;input type="radio" name="radio1" class="formjs" disabled checked&gt;
 	&lt;span&gt;Disabled &amp; checked radio&lt;/span&gt;
-&lt;/div&gt;</code></pre>
+&lt;/div&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#radios"></button>
+</pre>
 </div>
 </section>
 
+<div class="col-12-of-12">
+	<hr>
+</div>
+
 <section class="row">
-<div class="col col-5-of-12">
+<div class="col col-5-of-12 v-center">
+
+		<h2>Large radios <sup class="red sup-text" title="Require jQuery">jquery</sup></h2>
 
 			<div class="radio-group">
 				<input type="radio" name="radio6" class="formjs-lg">
@@ -530,10 +646,11 @@
 				<span>Disabled & checked radio</span>
 			</div>
 
-</div>
-<div class="col col-7-of-12">
+</div><!--
 
-	<pre><code class="language-markup">&lt;div class="radio-group"&gt;
+--><div class="col col-7-of-12 v-center">
+
+	<pre class="code-wrapper"><code class="language-markup" id="radios-lg">&lt;div class="radio-group"&gt;
 	&lt;input type="radio" name="radio2" class="formjs-lg"&gt;
 	&lt;span&gt;First radio&lt;/span&gt;
 
@@ -545,12 +662,19 @@
 
 	&lt;input type="radio" name="radio2" class="formjs-lg" disabled checked&gt;
 	&lt;span&gt;Disabled &amp; checked radio&lt;/span&gt;
-&lt;/div&gt;</code></pre>
+&lt;/div&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#radios-lg"></button>
+</pre>
 </div>
 </section>
 
+<div class="col-12-of-12">
+	<hr>
+</div>
+
 <section class="row">
-<div class="col col-5-of-12">
+<div class="col col-5-of-12 v-center">
+
+		<h2>Inline checkboxes</h2>
 
 			<div class="checkbox-group inline-group">
 				<input type="checkbox" class="formjs" checked>
@@ -575,9 +699,9 @@
 			</div>
 
 </div>
-<div class="col col-7-of-12">
+<div class="col col-7-of-12 v-center">
 
-	<pre><code class="language-markup">&lt;div class="checkbox-group inline-group"&gt;
+	<pre class="code-wrapper"><code class="language-markup" id="inline-group">&lt;div class="checkbox-group inline-group"&gt;
 	&lt;input type="checkbox" class="formjs" checked&gt;
 	&lt;span&gt;First checkbox&lt;/span&gt;
 
@@ -597,12 +721,19 @@
 
 	&lt;input type="radio" name="radio3" class="formjs"&gt;
 	&lt;span&gt;Third radio&lt;/span&gt;
-&lt;/div&gt;</code></pre>
+&lt;/div&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#inline-group"></button>
+</pre>
 </div>
 </section>
 
+<div class="col-12-of-12">
+	<hr>
+</div>
+
 <section class="row">
-<div class="col col-5-of-12">
+<div class="col col-5-of-12 v-center">
+
+		<h2>Checkbox and radio label size</h2>
 
 			<div class="checkbox-group">
 				<input type="checkbox" class="formjs" checked>
@@ -627,9 +758,9 @@
 			</div>
 
 </div>
-<div class="col col-7-of-12">
+<div class="col col-7-of-12 v-center">
 
-	<pre><code class="language-markup">&lt;div class="checkbox-group"&gt;
+	<pre class="code-wrapper"><code class="language-markup" id="vertical-group">&lt;div class="checkbox-group"&gt;
 	&lt;input type="checkbox" class="formjs" checked&gt;
 	&lt;span class="label-sm"&gt;Small label&lt;/span&gt;
 
@@ -649,12 +780,19 @@
 
 	&lt;input type="radio" name="radio10" class="formjs"&gt;
 	&lt;span class="label-lg"&gt;large label&lt;/span&gt;
-&lt;/div&gt;</code></pre>
+&lt;/div&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#vertical-group"></button>
+</pre>
 </div>
 </section>
 
+<div class="col-12-of-12">
+	<hr>
+</div>
+
 <section class="row">
-<div class="col col-5-of-12">
+<div class="col col-5-of-12 v-center">
+
+		<h2>Selects <sup class="red sup-text" title="Require jQuery">jquery</sup></h2>
 
 			<div class="select-group">
 				<select class="formjs-sm">
@@ -677,9 +815,9 @@
 			</div>
 
 </div>
-<div class="col col-7-of-12">
+<div class="col col-7-of-12 v-center">
 
-	<pre><code class="language-markup">&lt;div class="select-group"&gt;
+	<pre class="code-wrapper"><code class="language-markup" id="select">&lt;div class="select-group"&gt;
 	&lt;select class="formjs-sm"&gt;
 		&lt;option&gt;small select&lt;/option&gt;
 		&lt;option&gt;First option&lt;/option&gt;
@@ -697,12 +835,19 @@
 		&lt;option&gt;First option&lt;/option&gt;
 		&lt;option&gt;Second option&lt;/option&gt;
 	&lt;/select&gt;
-&lt;/div&gt;</code></pre>
+&lt;/div&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#select"></button>
+</pre>
 </div>
 </section>
 
+<div class="col-12-of-12">
+	<hr>
+</div>
+
 <section class="row">
-<div class="col col-5-of-12">
+<div class="col col-5-of-12 v-center">
+
+		<h2>Multiple selects</h2>
 
 			<div class="select-group">
 				<select class="formjs" multiple>
@@ -717,9 +862,9 @@
 			</div>
 
 </div>
-<div class="col col-7-of-12">
+<div class="col col-7-of-12 v-center">
 
-	<pre><code class="language-markup">&lt;div class="select-group"&gt;
+	<pre class="code-wrapper"><code class="language-markup" id="select-multiple">&lt;div class="select-group"&gt;
 	&lt;select class="formjs" multiple&gt;
 		&lt;option&gt;Multiple select&lt;/option&gt;
 		&lt;option&gt;Second option&lt;/option&gt;
@@ -729,12 +874,19 @@
 		&lt;option&gt;Sixth option&lt;/option&gt;
 		&lt;option&gt;Seventh option&lt;/option&gt;
 	&lt;/select&gt;
-&lt;/div&gt;</code></pre>
+&lt;/div&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#select-multiple"></button>
+</pre>
 </div>
 </section>
 
+<div class="col-12-of-12">
+	<hr>
+</div>
+
 <section class="row">
-<div class="col col-5-of-12">
+<div class="col col-5-of-12 v-center">
+
+		<h2>Disabled selects</h2>
 
 			<div class="select-group">
 				<select class="formjs-sm" disabled>
@@ -755,9 +907,9 @@
 			</div>
 
 </div>
-<div class="col col-7-of-12">
+<div class="col col-7-of-12 v-center">
 
-	<pre><code class="language-markup">&lt;div class="select-group"&gt;
+	<pre class="code-wrapper"><code class="language-markup" id="select-disabled">&lt;div class="select-group"&gt;
 	&lt;select class="formjs-sm" disabled&gt;
 		&lt;option&gt;Disabled select&lt;/option&gt;
 		&lt;option&gt;First option&lt;/option&gt;
@@ -773,12 +925,19 @@
 		&lt;option&gt;Sixth option&lt;/option&gt;
 		&lt;option&gt;Seventh option&lt;/option&gt;
 	&lt;/select&gt;
-&lt;/div&gt;</code></pre>
+&lt;/div&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#select-disabled"></button>
+</pre>
 </div>
 </section>
 
+<div class="col-12-of-12">
+	<hr>
+</div>
+
 <section class="row">
-<div class="col col-5-of-12" style="overflow: hidden">
+<div class="col col-5-of-12 v-center" style="overflow: hidden">
+
+		<h2>Files inputs</h2>
 
 			<div>
 				<label class="input-label-sm">Small file input</label>
@@ -796,9 +955,9 @@
 			</div>
 
 </div>
-<div class="col col-7-of-12">
+<div class="col col-7-of-12 v-center">
 
-	<pre><code class="language-markup">&lt;div&gt;
+	<pre class="code-wrapper"><code class="language-markup" id="input-file">&lt;div&gt;
 	&lt;label class="input-label-sm"&gt;Small file input&lt;/label&gt;
 	&lt;input type="file" class="formjs-sm"&gt;
 &lt;/div&gt;
@@ -811,12 +970,44 @@
 &lt;div&gt;
 	&lt;label class="input-label-lg"&gt;Large file input&lt;/label&gt;
 	&lt;input type="file" class="formjs-lg"&gt;
-&lt;/div&gt;</code></pre>
+&lt;/div&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#input-file"></button>
+</pre>
 </div>
 </section>
 
+<div class="col-12-of-12">
+	<hr>
+</div>
+
 <section class="row">
-<div class="col col-5-of-12">
+<div class="col col-5-of-12 v-center">
+
+		<h2>Buttons</h2>
+
+			<a class="formjs formjs-primary" href="#">Link</a>
+			<button class="formjs formjs-primary" type="submit">Button</button>
+			<input class="formjs formjs-primary" type="button" value="Input">
+			<input class="formjs formjs-primary" type="submit" value="Submit">
+
+</div>
+<div class="col col-7-of-12 v-center">
+
+	<pre class="code-wrapper"><code class="language-markup" id="all-buttons">&#x3C;a class=&#x22;formjs formjs-primary&#x22; href=&#x22;#&#x22;&#x3E;Link&#x3C;/a&#x3E;
+&#x3C;button class=&#x22;formjs formjs-primary&#x22; type=&#x22;submit&#x22;&#x3E;Button&#x3C;/button&#x3E;
+&#x3C;input class=&#x22;formjs formjs-primary&#x22; type=&#x22;button&#x22; value=&#x22;Input&#x22;&#x3E;
+&#x3C;input class=&#x22;formjs formjs-primary&#x22; type=&#x22;submit&#x22; value=&#x22;Submit&#x22;&#x3E;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#all-buttons"></button>
+</pre>
+</div>
+</section>
+
+<div class="col-12-of-12">
+	<hr>
+</div>
+
+<section class="row">
+<div class="col col-5-of-12 v-center">
+
+		<h2>Buttons style</h2>
 
 			<input type="submit" class="formjs formjs-default" value="default">
 			<input type="submit" class="formjs formjs-success" value="success">
@@ -826,53 +1017,72 @@
 			<input type="submit" class="formjs formjs-danger" value="danger">
 
 </div>
-<div class="col col-7-of-12">
+<div class="col col-7-of-12 v-center">
 
-	<pre><code class="language-markup">&lt;input type="submit" class="formjs formjs-default" value="default"&gt;
+	<pre class="code-wrapper"><code class="language-markup" id="buttons">&lt;input type="submit" class="formjs formjs-default" value="default"&gt;
 &lt;input type="submit" class="formjs formjs-success" value="success"&gt;
 &lt;input type="submit" class="formjs formjs-primary" value="primary"&gt;
 &lt;input type="submit" class="formjs formjs-info" value="info"&gt;
 &lt;input type="submit" class="formjs formjs-warning" value="warning"&gt;
-&lt;input type="submit" class="formjs formjs-danger" value="danger"&gt;</code></pre>
+&lt;input type="submit" class="formjs formjs-danger" value="danger"&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#buttons"></button>
+</pre>
 </div>
 </section>
 
+<div class="col-12-of-12">
+	<hr>
+</div>
+
 <section class="row">
-<div class="col col-5-of-12">
+<div class="col col-5-of-12 v-center">
+
+		<h2>Buttons size</h2>
 
 			<input type="submit" class="formjs formjs-danger formjs-sm" value="Small button">
 			<input type="submit" class="formjs formjs-danger" value="Medium button">
 			<input type="submit" class="formjs formjs-danger formjs-lg" value="Large button">
 
 </div>
-<div class="col col-7-of-12">
+<div class="col col-7-of-12 v-center">
 
-	<pre><code class="language-markup">&lt;input type="submit" class="formjs formjs-danger formjs-sm" value="Small button"&gt;
+	<pre class="code-wrapper"><code class="language-markup" id="buttons-size">&lt;input type="submit" class="formjs formjs-danger formjs-sm" value="Small button"&gt;
 &lt;input type="submit" class="formjs formjs-danger" value="Medium button"&gt;
-&lt;input type="submit" class="formjs formjs-danger formjs-lg" value="Large button"&gt;</code></pre>
+&lt;input type="submit" class="formjs formjs-danger formjs-lg" value="Large button"&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#buttons-size"></button>
+</pre>
 </div>
 </section>
 
+<div class="col-12-of-12">
+	<hr>
+</div>
+
 <section class="row">
-<div class="col col-5-of-12">
+<div class="col col-5-of-12 v-center">
+
+		<h2>Buttons block</h2>
 
 			<input type="submit" class="formjs formjs-success formjs-sm formjs-block" value="Small button">
 			<input type="submit" class="formjs formjs-primary formjs-block" value="Medium button">
 			<input type="submit" class="formjs formjs-warning formjs-lg formjs-block" value="Large button">
 
 </div>
-<div class="col col-7-of-12">
+<div class="col col-7-of-12 v-center">
 
-	<pre><code class="language-markup">&lt;input type="submit" class="formjs formjs-success formjs-sm formjs-block" value="Small button"&gt;
+	<pre class="code-wrapper"><code class="language-markup" id="buttons-block">&lt;input type="submit" class="formjs formjs-success formjs-sm formjs-block" value="Small button"&gt;
 &lt;input type="submit" class="formjs formjs-primary formjs-block" value="Medium button"&gt;
-&lt;input type="submit" class="formjs formjs-warning formjs-lg formjs-block" value="Large button"&gt;</code></pre>
+&lt;input type="submit" class="formjs formjs-warning formjs-lg formjs-block" value="Large button"&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#buttons-block"></button>
+</pre>
 </div>
 </section>
 
 </main>
 
-<script type="text/javascript" src="js/formjs.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/formjs.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/prism.min.js"></script>
+<script type="text/javascript" src="js/assets/tooltip.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.6.0/clipboard.min.js"></script>
+<script type="text/javascript" src="js/assets/script.js"></script>
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 </body>
