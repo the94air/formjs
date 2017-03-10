@@ -1,3 +1,13 @@
+/* Form JS - A Classic Form Styling With Ease
+Copyright (c)2017 Abdalla Mahmoud - MIT License
+
+Resources:
+https://goo.gl/sgCBNG
+https://goo.gl/MxsV9S
+https://goo.gl/afpURT
+https://goo.gl/ZxwQ
+*/
+
 function DisableErrorGlowOnFocus() {
 	$("input:not([type=submit]):not([type=button]):not([type=radio]):not([type=checkbox]):not([type=file]).disableonfocus").on('focus', function() {
 		$(this).removeClass("formjs-error");
