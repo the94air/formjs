@@ -889,7 +889,7 @@ select[multiple].formjs {
 	-ms-user-select: none;
 	user-select: none;
 }
-input[type="submit"].formjs, button.formjs, a.formjs {
+input[type="submit"].formjs, input[type="button"].formjs, button.formjs, a.formjs {
 	display: inline-block;
 	margin-bottom: 0;
 	font-weight: normal;
@@ -912,7 +912,7 @@ input[type="submit"].formjs, button.formjs, a.formjs {
 	transition: background-color 150ms linear, border-color 150ms linear, color 150ms linear, box-shadow 150ms linear;
 	text-decoration: none;
 }
-input[type="submit"].formjs:focus, button.formjs:focus, a.formjs:focus, input[type="submit"].formjs.focus, button.formjs.focus, a.formjs.focus, input[type="submit"].formjs:active:focus, button.formjs:active:focus, a.formjs:active:focus, input[type="submit"].formjs:active.focus, button.formjs:active.focus, a.formjs:active.focus, input[type="submit"].formjs.active:focus, button.formjs.active:focus, a.formjs.active:focus, input[type="submit"].formjs.active.focus, button.formjs.active.focus, a.formjs.active.focus {
+input[type="submit"].formjs:focus, input[type="button"].formjs:focus, button.formjs:focus, a.formjs:focus, input[type="submit"].formjs.focus, input[type="button"].formjs.focus, button.formjs.focus, a.formjs.focus, input[type="submit"].formjs:active:focus, input[type="button"].formjs:active:focus, button.formjs:active:focus, a.formjs:active:focus, input[type="submit"].formjs:active.focus, input[type="button"].formjs:active.focus, button.formjs:active.focus, a.formjs:active.focus, input[type="submit"].formjs.active:focus, input[type="button"].formjs.active:focus, button.formjs.active:focus, a.formjs.active:focus, input[type="submit"].formjs.active.focus, input[type="button"].formjs.active.focus, button.formjs.active.focus, a.formjs.active.focus {
 	outline-offset: -2px;
 	border-color: #3aabf0;
 	outline: 0;
@@ -920,22 +920,22 @@ input[type="submit"].formjs:focus, button.formjs:focus, a.formjs:focus, input[ty
 	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(58, 171, 240, 0.6);
 	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(58, 171, 240, 0.6);
 }
-input[type="submit"].formjs.disabled, button.formjs.disabled, a.formjs.disabled, input[type="submit"].formjs[disabled], button.formjs[disabled], a.formjs[disabled] {
+input[type="submit"].formjs.disabled, input[type="button"].formjs.disabled, button.formjs.disabled, a.formjs.disabled, input[type="submit"].formjs[disabled], input[type="button"].formjs[disabled], button.formjs[disabled], a.formjs[disabled] {
 	cursor: not-allowed;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
-	filter: alpha(opacity=65);
-	-moz-opacity: 0.65;
-	-khtml-opacity: 0.65;
-	opacity: 0.65;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.6;
+	-khtml-opacity: 0.6;
+	opacity: 0.6;
 	-moz-box-shadow: none;
 	-webkit-box-shadow: none;
 	box-shadow: none
 }
-input[type="submit"].formjs-sm, button.formjs-sm, a.formjs-sm {
+input[type="submit"].formjs-sm, input[type="button"].formjs-sm, button.formjs-sm, a.formjs-sm {
 	font-size: 13px;
 	padding: 6px 12px 6px 12px;
 }
-input[type="submit"].formjs-lg, button.formjs-lg, a.formjs-lg {
+input[type="submit"].formjs-lg, input[type="button"].formjs-lg, button.formjs-lg, a.formjs-lg {
 	font-size: 19px;
 	padding: 8px 18px 8px 18px;
 }
@@ -1131,7 +1131,7 @@ input[type="submit"].formjs-lg, button.formjs-lg, a.formjs-lg {
 	background-color: #d31a48;
 	border-color: #bd1740
 }
-input[type="submit"].formjs-block, button.formjs-block, a.formjs-block {
+input[type="submit"].formjs-block, input[type="button"].formjs-block, button.formjs-block, a.formjs-block {
 	display: block;
 	width: 100%;
 	margin: 0;
