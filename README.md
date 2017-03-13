@@ -65,6 +65,6 @@ we alse use javascript to disable submit buttons while the page is loading to sa
 ## Custom CSS for inputs (with good looking checkboxes, radios and selects)  
 Example
 
-![example](https://i.imgsafe.org/fff74dfd40.png)  
+![example](https://i.imgsafe.org/68c30c55dd.jpeg)  
   
 ## See full [documentation and components](https://form.js.org)
