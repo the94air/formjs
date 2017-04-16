@@ -1,17 +1,12 @@
 # Form JS Framework
 A Classic Form Styling With Ease using css, javascript and jQuery. Remember it is a simple framework only for your forms. Have fun ;) 
   
-## Where to get Form JS  
+## Installation
 
-From rawgit CDN
+From CDNjs
 ```
-https://cdn.rawgit.com/the94air/formjs/aa4abe2b/css/formjs.css
-// Or minfied version
-https://cdn.rawgit.com/the94air/formjs/aa4abe2b/css/formjs.min.css
-// FormJs JS 
-https://cdn.rawgit.com/the94air/formjs/aa4abe2b/js/formjs.js
-// Or minfied version
-https://cdn.rawgit.com/the94air/formjs/aa4abe2b/js/formjs.min.js
+https://cdnjs.cloudflare.com/ajax/libs/formjs/1.1.1/formjs.min.css
+https://cdnjs.cloudflare.com/ajax/libs/formjs/1.1.1/formjs.min.js
 ```
 Or download the [last release](https://github.com/the94air/formjs/releases)
 
@@ -24,14 +19,14 @@ just add the css, js and jQuery files to your code
 <head>
 	<meta charset="utf-8">
 	<title>Project</title>
-	<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/the94air/formjs/aa4abe2b/css/formjs.min.css">
+	<link rel="stylesheet" type="text/css" href="/bath/to/formjs.min.css">
 </head>
 <body>
 
 <!-- Content -->
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdn.rawgit.com/the94air/formjs/aa4abe2b/js/formjs.min.js"></script>
+<script type="text/javascript" src="/bath/to/formjs.min.css"></script>
 </body>
 </html>
 ```
@@ -44,23 +39,21 @@ Just add `formjs` class to your input or spacify you input size
 `formjs`    for medium size (normal-size)  
 `formjs-lg` for large size  
   
-Except the button input you will add 2 classes  
+Except the button input you need to add 2 classes  
   
 `fromjs fromjs-sm` for small size  
 `fromjs formjs`    for medium size (normal-size)  
 `fromjs formjs-lg` for large size   
   
 ## Important
-You can use this framework with or without jquery. But some components does require jquery. If you didn't use jquery you don't need formjs.js file and you shouldn't use these classes:  
-  
+If you didn't want to use jquery just use the `formjs.css` and forget about `formjs.js` file.  
+You can use this framework with or without jquery. But some components does require jquery so you shouldn't use these classes:  
 (1)	`.disable` class  
 (2) `.disableonfocus` class  
 (3)`.formjs` Checkboxes  
 (4)`.formjs` Radios  
-(5)`.formjs` select [not multiple select]  
-  
-using these components without `.formjs` class will not effect your forms.  
-we alse use javascript to disable submit buttons while the page is loading to save froms form resubmition while the form is submited.  
+(5)`.formjs` select [not multiple select]   
+`formjs.js` will disable submit buttons when the page is loading to save forms from resubmition while the form is submited.  
   
 ## Custom CSS for inputs (with good looking checkboxes, radios and selects)  
 Example

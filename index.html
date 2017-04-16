@@ -52,16 +52,11 @@ To Do stuff
 <section class="row">
 	<div class="col col-5-of-12 v-center">
 		<h2>Installation</h2>
-		<p>To use formjs just use it from the CDN or download <a href="https://github.com/the94air/formjs/releases">the lastest release</a> from github and also add <a href="https://code.jquery.com/">jquery</a> to your code</p>
+		<p>Use formjs from the CDNjs or download <a href="https://github.com/the94air/formjs/releases">the lastest release</a> from github and also use <a href="https://code.jquery.com/">jquery</a></p>
 	</div><!--
 	--><div class="col col-7-of-12 v-center">
-	<pre class="code-wrapper"><code class="language-css" id="cdn">https://cdn.rawgit.com/the94air/formjs/aa4abe2b/css/formjs.css
-// Or minfied version
-https://cdn.rawgit.com/the94air/formjs/aa4abe2b/css/formjs.min.css
-// FormJs JS 
-https://cdn.rawgit.com/the94air/formjs/aa4abe2b/js/formjs.js
-// Or minfied version
-https://cdn.rawgit.com/the94air/formjs/aa4abe2b/js/formjs.min.js</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#cdn"></button>
+	<pre class="code-wrapper"><code class="language-css" id="cdn">https://cdnjs.cloudflare.com/ajax/libs/formjs/1.1.1/formjs.min.css
+https://cdnjs.cloudflare.com/ajax/libs/formjs/1.1.1/formjs.min.js</code><button class="btn-clipboard fa fa-copy" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#cdn"></button>
 </pre>
 </section>
 
@@ -72,7 +67,8 @@ https://cdn.rawgit.com/the94air/formjs/aa4abe2b/js/formjs.min.js</code><button c
 <section class="row">
 	<div class="col col-5-of-12 v-center">
 		<h2>No-js</h2>
-		<p>You can use this framework with or without jquery. But some components does require jquery. If you didn't use jquery you don't need formjs.js file and you shouldn't use these classes: </p>
+		<p>If you didn't want to use jquery just use the <code>formjs.css</code> and forget about<code> formjs.js</code> file.</p>
+		<p>You can use this framework with or without jquery. But some components does require jquery so you shouldn't use these classes: </p>
 		<ul>
 			<li><code>.disable</code> class</li>
 			<li><code>.disableonfocus</code> class</li>
@@ -80,19 +76,19 @@ https://cdn.rawgit.com/the94air/formjs/aa4abe2b/js/formjs.min.js</code><button c
 			<li><code>.formjs</code> Radios</li>
 			<li><code>.formjs</code> select [not multiple select]</li>
 		</ul>
-		<p>using these components without <code>.formjs</code> class will not effect your forms.</p> 
-		<p>we alse use javascript to disable submit buttons while the page is loading to save forms from resubmition while the form is submited.</p>
+		<p><i class="fa fa-info-circle" aria-hidden="true"></i> <code>formjs.js </code>will disable submit buttons when the page is loading to save forms from resubmition while the form is submited.</p>
 	</div><!--
 	--><div class="col col-7-of-12 v-center">
 	<pre class="code-wrapper"><code class="language-css" id="css">/* Remember to add your font */
 	.formjs, .formjs-sm, .formjs-lg {
 	font-family: "Quicksand", serif;
-}</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#css"></button>
+}</code><button class="btn-clipboard fa fa-copy" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#css"></button>
 </pre>
 </section>
 
 <div class="col-12-of-12">
 	<hr>
+	<h1 class="text-center">Documentation</h1>
 </div>
 
 <section class="row">
@@ -121,19 +117,19 @@ https://cdn.rawgit.com/the94air/formjs/aa4abe2b/js/formjs.min.js</code><button c
 	<pre class="code-wrapper"><code class="language-markup" id="text-input-sm">&lt;div&gt;
 	&lt;label class="input-label-sm" for="Small"&gt;Small label&lt;/label&gt;
 	&lt;input type="text" class="formjs-sm" id="Small"&gt;
-&lt;/div&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#text-input-sm"></button>
+&lt;/div&gt;</code><button class="btn-clipboard fa fa-copy" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#text-input-sm"></button>
 </pre>
 
 <pre class="code-wrapper"><code class="language-markup" id="text-input">&lt;div&gt;
 	&lt;label class="input-label" for="Medium"&gt;Medium label&lt;/label&gt;
 	&lt;input type="text" class="formjs" id="Medium"&gt;
-&lt;/div&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#text-input"></button>
+&lt;/div&gt;</code><button class="btn-clipboard fa fa-copy" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#text-input"></button>
 </pre>
 
 <pre class="code-wrapper"><code class="language-markup" id="text-input-lg">&lt;div&gt;
 	&lt;label class="input-label-lg" for="Large"&gt;Large label&lt;/label&gt;
 	&lt;input type="text" class="formjs-lg" id="Large"&gt;
-&lt;/div&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#text-input-lg"></button>
+&lt;/div&gt;</code><button class="btn-clipboard fa fa-copy" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#text-input-lg"></button>
 </pre>
 </div>
 </section>
@@ -162,7 +158,7 @@ https://cdn.rawgit.com/the94air/formjs/aa4abe2b/js/formjs.min.js</code><button c
 	<pre class="code-wrapper"><code class="language-markup" id="textarea-inputs-sm">&lt;div&gt;
 	&lt;label class="input-label-sm" for="Small"&gt;Small label&lt;/label&gt;
 	&lt;textarea class="formjs-sm" id="Small"&gt;&lt;/textarea&gt;
-&lt;/div&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#textarea-inputs-sm"></button>
+&lt;/div&gt;</code><button class="btn-clipboard fa fa-copy" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#textarea-inputs-sm"></button>
 </pre>
 </div>
 </section>
@@ -181,7 +177,7 @@ https://cdn.rawgit.com/the94air/formjs/aa4abe2b/js/formjs.min.js</code><button c
 	<pre class="code-wrapper"><code class="language-markup" id="textarea-inputs">&lt;div&gt;
 	&lt;label class="input-label" for="Medium"&gt;Medium label&lt;/label&gt;
 	&lt;textarea class="formjs" id="Medium"&gt;&lt;/textarea&gt;
-&lt;/div&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#textarea-inputs"></button>
+&lt;/div&gt;</code><button class="btn-clipboard fa fa-copy" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#textarea-inputs"></button>
 </pre>
 </div>
 </section>
@@ -200,7 +196,7 @@ https://cdn.rawgit.com/the94air/formjs/aa4abe2b/js/formjs.min.js</code><button c
 	<pre class="code-wrapper"><code class="language-markup" id="textarea-inputs-lg">&lt;div&gt;
 	&lt;label class="input-label-lg" for="Large"&gt;Large label&lt;/label&gt;
 	&lt;textarea class="formjs-lg" id="Large"&gt;&lt;/textarea&gt;
-&lt;/div&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#textarea-inputs-lg"></button>
+&lt;/div&gt;</code><button class="btn-clipboard fa fa-copy" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#textarea-inputs-lg"></button>
 </pre>
 </div>
 </section>
@@ -240,7 +236,7 @@ https://cdn.rawgit.com/the94air/formjs/aa4abe2b/js/formjs.min.js</code><button c
 
 &lt;div&gt;
 	&lt;textarea class="formjs disabled"&gt;&lt;/textarea&gt;
-&lt;/div&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#disabled-inputs"></button>
+&lt;/div&gt;</code><button class="btn-clipboard fa fa-copy" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#disabled-inputs"></button>
 </pre>
 </div>
 </section>
@@ -274,7 +270,7 @@ https://cdn.rawgit.com/the94air/formjs/aa4abe2b/js/formjs.min.js</code><button c
 &lt;div&gt;
 	&lt;label class="input-label" for="error2"&gt;This is label&lt;/label&gt;
 	&lt;input type="text" class="formjs formjs-error disableonfocus" id="error2"&gt;
-&lt;/div&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#validation-errors"></button>
+&lt;/div&gt;</code><button class="btn-clipboard fa fa-copy" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#validation-errors"></button>
 </pre>
 </div>
 </section>
@@ -313,21 +309,21 @@ https://cdn.rawgit.com/the94air/formjs/aa4abe2b/js/formjs.min.js</code><button c
 	&lt;label class="input-label-sm" for="Small"&gt;Small label&lt;/label&gt;
 	&lt;input type="text" class="formjs-sm formjs-error" id="Small"&gt;
 	&lt;label class="formjs-msg-sm" for="Small"&gt;This field is required&lt;/label&gt;
-&lt;/div&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#input-error-sm"></button>
+&lt;/div&gt;</code><button class="btn-clipboard fa fa-copy" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#input-error-sm"></button>
 </pre>
 
 	<pre class="code-wrapper"><code class="language-markup" id="input-error">&lt;div&gt;
 	&lt;label class="input-label" for="Medium"&gt;Medium label&lt;/label&gt;
 	&lt;input type="text" class="formjs formjs-error" id="Medium"&gt;
 	&lt;label class="formjs-msg" for="Medium"&gt;This field is required&lt;/label&gt;
-&lt;/div&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="input-error"></button>
+&lt;/div&gt;</code><button class="btn-clipboard fa fa-copy" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="input-error"></button>
 </pre>
 
 	<pre class="code-wrapper"><code class="language-markup" id="input-error-lg">&lt;div&gt;
 	&lt;label class="input-label-lg" for="Large"&gt;Large label&lt;/label&gt;
 	&lt;input type="text" class="formjs-lg formjs-error" id="Large"&gt;
 	&lt;label class="formjs-msg-lg" for="Large"&gt;This field is required&lt;/label&gt;
-&lt;/div&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#input-error-lg"></button>
+&lt;/div&gt;</code><button class="btn-clipboard fa fa-copy" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#input-error-lg"></button>
 </pre>
 </div>
 </section>
@@ -358,17 +354,17 @@ https://cdn.rawgit.com/the94air/formjs/aa4abe2b/js/formjs.min.js</code><button c
 --><div class="col col-7-of-12 v-center">
 	<pre class="code-wrapper"><code class="language-markup" id="link-sm">&lt;div&gt;
 	&lt;a href="#" class="formjs-link-sm"&gt;This is a small link&lt;/a&gt;
-&lt;/div&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#link-sm"></button>
+&lt;/div&gt;</code><button class="btn-clipboard fa fa-copy" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#link-sm"></button>
 </pre>
 
 <pre class="code-wrapper"><code class="language-markup" id="link">&lt;div&gt;
 	&lt;a href="#" class="formjs-link"&gt;This is a medium link&lt;/a&gt;
-&lt;/div&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#link"></button>
+&lt;/div&gt;</code><button class="btn-clipboard fa fa-copy" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#link"></button>
 </pre>
 
 <pre class="code-wrapper"><code class="language-markup" id="link-lg">&lt;div&gt;
 	&lt;a href="#" class="formjs-link-lg"&gt;This is a large link&lt;/a&gt;
-&lt;/div&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#link-lg"></button>
+&lt;/div&gt;</code><button class="btn-clipboard fa fa-copy" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#link-lg"></button>
 </pre>
 </div>
 </section>
@@ -400,7 +396,7 @@ https://cdn.rawgit.com/the94air/formjs/aa4abe2b/js/formjs.min.js</code><button c
 
 &lt;div&gt;
 	&lt;a href="#" class="formjs-link formjs-left"&gt;pulled left&lt;/a&gt;
-&lt;/div&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#float"></button>
+&lt;/div&gt;</code><button class="btn-clipboard fa fa-copy" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#float"></button>
 </pre>
 </div>
 </section>
@@ -442,7 +438,7 @@ https://cdn.rawgit.com/the94air/formjs/aa4abe2b/js/formjs.min.js</code><button c
 
 	&lt;input type="checkbox" class="formjs-sm" disabled checked&gt;
 	&lt;span&gt;Disabled &amp; checked checkbox&lt;/span&gt;
-&lt;/div&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#checkbox-sm"></button>
+&lt;/div&gt;</code><button class="btn-clipboard fa fa-copy" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#checkbox-sm"></button>
 </pre>
 </div>
 </section>
@@ -486,7 +482,7 @@ https://cdn.rawgit.com/the94air/formjs/aa4abe2b/js/formjs.min.js</code><button c
 
 	&lt;input type="checkbox" class="formjs" disabled checked&gt;
 	&lt;span&gt;Disabled &amp; checked checkbox&lt;/span&gt;
-&lt;/div&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#checkbox"></button>
+&lt;/div&gt;</code><button class="btn-clipboard fa fa-copy" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#checkbox"></button>
 </pre>
 </div>
 </section>
@@ -530,7 +526,7 @@ https://cdn.rawgit.com/the94air/formjs/aa4abe2b/js/formjs.min.js</code><button c
 
 	&lt;input type="checkbox" class="formjs-lg" disabled checked&gt;
 	&lt;span&gt;Disabled &amp; checked checkbox&lt;/span&gt;
-&lt;/div&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#checkbox-lg"></button>
+&lt;/div&gt;</code><button class="btn-clipboard fa fa-copy" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#checkbox-lg"></button>
 </pre>
 </div>
 </section>
@@ -574,7 +570,7 @@ https://cdn.rawgit.com/the94air/formjs/aa4abe2b/js/formjs.min.js</code><button c
 
 	&lt;input type="radio" name="radio" class="formjs-sm" disabled checked&gt;
 	&lt;span&gt;Disabled &amp; checked radio&lt;/span&gt;
-&lt;/div&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#radios-sm"></button>
+&lt;/div&gt;</code><button class="btn-clipboard fa fa-copy" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#radios-sm"></button>
 </pre>
 </div>
 </section>
@@ -618,7 +614,7 @@ https://cdn.rawgit.com/the94air/formjs/aa4abe2b/js/formjs.min.js</code><button c
 
 	&lt;input type="radio" name="radio1" class="formjs" disabled checked&gt;
 	&lt;span&gt;Disabled &amp; checked radio&lt;/span&gt;
-&lt;/div&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#radios"></button>
+&lt;/div&gt;</code><button class="btn-clipboard fa fa-copy" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#radios"></button>
 </pre>
 </div>
 </section>
@@ -662,7 +658,7 @@ https://cdn.rawgit.com/the94air/formjs/aa4abe2b/js/formjs.min.js</code><button c
 
 	&lt;input type="radio" name="radio2" class="formjs-lg" disabled checked&gt;
 	&lt;span&gt;Disabled &amp; checked radio&lt;/span&gt;
-&lt;/div&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#radios-lg"></button>
+&lt;/div&gt;</code><button class="btn-clipboard fa fa-copy" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#radios-lg"></button>
 </pre>
 </div>
 </section>
@@ -721,7 +717,7 @@ https://cdn.rawgit.com/the94air/formjs/aa4abe2b/js/formjs.min.js</code><button c
 
 	&lt;input type="radio" name="radio3" class="formjs"&gt;
 	&lt;span&gt;Third radio&lt;/span&gt;
-&lt;/div&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#inline-group"></button>
+&lt;/div&gt;</code><button class="btn-clipboard fa fa-copy" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#inline-group"></button>
 </pre>
 </div>
 </section>
@@ -780,7 +776,7 @@ https://cdn.rawgit.com/the94air/formjs/aa4abe2b/js/formjs.min.js</code><button c
 
 	&lt;input type="radio" name="radio10" class="formjs"&gt;
 	&lt;span class="label-lg"&gt;large label&lt;/span&gt;
-&lt;/div&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#vertical-group"></button>
+&lt;/div&gt;</code><button class="btn-clipboard fa fa-copy" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#vertical-group"></button>
 </pre>
 </div>
 </section>
@@ -835,7 +831,7 @@ https://cdn.rawgit.com/the94air/formjs/aa4abe2b/js/formjs.min.js</code><button c
 		&lt;option&gt;First option&lt;/option&gt;
 		&lt;option&gt;Second option&lt;/option&gt;
 	&lt;/select&gt;
-&lt;/div&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#select"></button>
+&lt;/div&gt;</code><button class="btn-clipboard fa fa-copy" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#select"></button>
 </pre>
 </div>
 </section>
@@ -874,7 +870,7 @@ https://cdn.rawgit.com/the94air/formjs/aa4abe2b/js/formjs.min.js</code><button c
 		&lt;option&gt;Sixth option&lt;/option&gt;
 		&lt;option&gt;Seventh option&lt;/option&gt;
 	&lt;/select&gt;
-&lt;/div&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#select-multiple"></button>
+&lt;/div&gt;</code><button class="btn-clipboard fa fa-copy" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#select-multiple"></button>
 </pre>
 </div>
 </section>
@@ -925,7 +921,7 @@ https://cdn.rawgit.com/the94air/formjs/aa4abe2b/js/formjs.min.js</code><button c
 		&lt;option&gt;Sixth option&lt;/option&gt;
 		&lt;option&gt;Seventh option&lt;/option&gt;
 	&lt;/select&gt;
-&lt;/div&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#select-disabled"></button>
+&lt;/div&gt;</code><button class="btn-clipboard fa fa-copy" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#select-disabled"></button>
 </pre>
 </div>
 </section>
@@ -970,7 +966,7 @@ https://cdn.rawgit.com/the94air/formjs/aa4abe2b/js/formjs.min.js</code><button c
 &lt;div&gt;
 	&lt;label class="input-label-lg"&gt;Large file input&lt;/label&gt;
 	&lt;input type="file" class="formjs-lg"&gt;
-&lt;/div&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#input-file"></button>
+&lt;/div&gt;</code><button class="btn-clipboard fa fa-copy" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#input-file"></button>
 </pre>
 </div>
 </section>
@@ -995,7 +991,7 @@ https://cdn.rawgit.com/the94air/formjs/aa4abe2b/js/formjs.min.js</code><button c
 	<pre class="code-wrapper"><code class="language-markup" id="all-buttons">&#x3C;a class=&#x22;formjs formjs-primary&#x22; href=&#x22;#&#x22;&#x3E;Link&#x3C;/a&#x3E;
 &#x3C;button class=&#x22;formjs formjs-primary&#x22; type=&#x22;submit&#x22;&#x3E;Button&#x3C;/button&#x3E;
 &#x3C;input class=&#x22;formjs formjs-primary&#x22; type=&#x22;button&#x22; value=&#x22;Input&#x22;&#x3E;
-&#x3C;input class=&#x22;formjs formjs-primary&#x22; type=&#x22;submit&#x22; value=&#x22;Submit&#x22;&#x3E;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#all-buttons"></button>
+&#x3C;input class=&#x22;formjs formjs-primary&#x22; type=&#x22;submit&#x22; value=&#x22;Submit&#x22;&#x3E;</code><button class="btn-clipboard fa fa-copy" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#all-buttons"></button>
 </pre>
 </div>
 </section>
@@ -1024,7 +1020,7 @@ https://cdn.rawgit.com/the94air/formjs/aa4abe2b/js/formjs.min.js</code><button c
 &lt;input type="submit" class="formjs formjs-primary" value="primary"&gt;
 &lt;input type="submit" class="formjs formjs-info" value="info"&gt;
 &lt;input type="submit" class="formjs formjs-warning" value="warning"&gt;
-&lt;input type="submit" class="formjs formjs-danger" value="danger"&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#buttons"></button>
+&lt;input type="submit" class="formjs formjs-danger" value="danger"&gt;</code><button class="btn-clipboard fa fa-copy" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#buttons"></button>
 </pre>
 </div>
 </section>
@@ -1047,7 +1043,7 @@ https://cdn.rawgit.com/the94air/formjs/aa4abe2b/js/formjs.min.js</code><button c
 
 	<pre class="code-wrapper"><code class="language-markup" id="buttons-size">&lt;input type="submit" class="formjs formjs-danger formjs-sm" value="Small button"&gt;
 &lt;input type="submit" class="formjs formjs-danger" value="Medium button"&gt;
-&lt;input type="submit" class="formjs formjs-danger formjs-lg" value="Large button"&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#buttons-size"></button>
+&lt;input type="submit" class="formjs formjs-danger formjs-lg" value="Large button"&gt;</code><button class="btn-clipboard fa fa-copy" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#buttons-size"></button>
 </pre>
 </div>
 </section>
@@ -1070,7 +1066,7 @@ https://cdn.rawgit.com/the94air/formjs/aa4abe2b/js/formjs.min.js</code><button c
 
 	<pre class="code-wrapper"><code class="language-markup" id="buttons-block">&lt;input type="submit" class="formjs formjs-success formjs-sm formjs-block" value="Small button"&gt;
 &lt;input type="submit" class="formjs formjs-primary formjs-block" value="Medium button"&gt;
-&lt;input type="submit" class="formjs formjs-warning formjs-lg formjs-block" value="Large button"&gt;</code><button class="btn-clipboard fa fa-clipboard" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#buttons-block"></button>
+&lt;input type="submit" class="formjs formjs-warning formjs-lg formjs-block" value="Large button"&gt;</code><button class="btn-clipboard fa fa-copy" data-toggle="tooltip" title="Copy to clipboard!" data-clipboard-target="#buttons-block"></button>
 </pre>
 </div>
 </section>

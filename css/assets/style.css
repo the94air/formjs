@@ -35,6 +35,9 @@ hr {
 	background-color: #d31a48;
 	margin: 25px 0;
 }
+.text-center {
+  text-align: center;
+}
 .container {
 	margin: 100px auto;
 	max-width: 90%;
@@ -107,9 +110,9 @@ hr {
 	border: 1px solid #c3c3c3;
 	border-radius: 3px;
 	font-size: 15px;
-    line-height: 0;
-    width: 34px;
-    height: 30px;
+  line-height: 0;
+  width: 34px;
+  height: 30px;
 	width: 29px;
 	height: 28px;
 	position: absolute;
@@ -118,6 +121,7 @@ hr {
 	visibility: hidden;
 	opacity: 0;
 	transition: visibility 0s,opacity 0.5s ease;
+  outline: none;
 }
 .code-wrapper:hover .btn-clipboard {
 	visibility: visible;
@@ -128,7 +132,8 @@ hr {
 	cursor: pointer;
 }
 .btn-clipboard:active {
-    box-shadow: inset 0 0 0 20rem rgba(0,0,0,.125), inset 0 3px 4px 0 rgba(0,0,0,.25), 0 0 1px rgba(0,0,0,.125);
+  box-shadow: inset 0 0 0 8px rgba(0, 0, 0, 0.03), inset 0 0px 5px 0 rgba(0,0,0,.25), 0 0 2px rgba(0,0,0,.125);
+  border-color: rgba(211, 26, 72, 0.24);
 }
 .tooltip {
   position: absolute;
