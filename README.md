@@ -1,6 +1,7 @@
 # Form JS Framework
 A Classic Form Styling With Ease using css, javascript and jQuery. Remember it is a simple framework only for your forms. Have fun ;)  
-[![Build Status](https://ci.cdnjs.com/api/badges/cdnjs/cdnjs/status.svg)](https://ci.cdnjs.com/cdnjs/cdnjs)
+[![CDNJS](https://img.shields.io/cdnjs/v/formjs.svg)](https://cdnjs.com/libraries/formjs)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/the94air/formjs/master/License.txt)
 
 ## Installation
 
