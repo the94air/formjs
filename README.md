@@ -61,5 +61,3 @@ You can use this framework with or without jquery. But some components does requ
 Example
 
 ![example](https://i.imgsafe.org/68c30c55dd.jpeg)  
-  
-## See full [documentation and components](https://form.js.org)
